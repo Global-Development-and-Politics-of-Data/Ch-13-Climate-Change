@@ -13,13 +13,19 @@
    version="1.1"
    id="svg2193"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="data_management_shema.svg">
+   sodipodi:docname="data-management-shema.svg">
   <defs
      id="defs2187">
     <rect
+       x="120.75711"
+       y="55.08859"
+       width="51.31873"
+       height="17.754821"
+       id="rect925" />
+    <rect
        x="68.587117"
        y="54.845372"
-       width="56.061456"
+       width="50.953905"
        height="20.79503"
        id="rect2997" />
     <rect
@@ -55,8 +61,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.1757001"
-     inkscape:cx="358.67488"
-     inkscape:cy="242.61018"
+     inkscape:cx="327.57378"
+     inkscape:cy="416.96019"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -74,7 +80,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -110,79 +116,84 @@
          x="101.64762"
          y="104.48756"
          style="stroke-width:0.264583">File renaming rules</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
-       x="57.844727"
-       y="116.48603"
-       id="text2793"><tspan
-         sodipodi:role="line"
-         id="tspan2791"
+    <g
+       id="g944"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <text
+         xml:space="preserve"
+         style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
          x="57.844727"
          y="116.48603"
-         style="stroke-width:0.264583">Raw Data</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
-       x="66.45195"
-       y="125.83456"
-       id="text2809"><tspan
-         sodipodi:role="line"
-         id="tspan2807"
+         id="text2793"><tspan
+           sodipodi:role="line"
+           id="tspan2791"
+           x="57.844727"
+           y="116.48603"
+           style="stroke-width:0.264583">Raw Data</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
          x="66.45195"
          y="125.83456"
-         style="stroke-width:0.264583">Source 1</tspan><tspan
-         sodipodi:role="line"
-         x="66.45195"
-         y="131.12622"
-         style="stroke-width:0.264583"
-         id="tspan2811" /><tspan
-         sodipodi:role="line"
-         x="66.45195"
-         y="136.41789"
-         style="stroke-width:0.264583"
-         id="tspan2813">Source 2</tspan><tspan
-         sodipodi:role="line"
-         x="66.45195"
-         y="141.70955"
-         style="stroke-width:0.264583"
-         id="tspan2815" /><tspan
-         sodipodi:role="line"
-         x="66.45195"
-         y="147.00121"
-         style="stroke-width:0.264583"
-         id="tspan2817">Source n</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
-       x="138.9034"
-       y="-73.950195"
-       id="text2821-0"
-       transform="rotate(90)"><tspan
-         sodipodi:role="line"
-         id="tspan2819-7"
+         id="text2809"><tspan
+           sodipodi:role="line"
+           id="tspan2807"
+           x="66.45195"
+           y="125.83456"
+           style="stroke-width:0.264583">Source 1</tspan><tspan
+           sodipodi:role="line"
+           x="66.45195"
+           y="131.12622"
+           style="stroke-width:0.264583"
+           id="tspan2811" /><tspan
+           sodipodi:role="line"
+           x="66.45195"
+           y="136.41789"
+           style="stroke-width:0.264583"
+           id="tspan2813">Source 2</tspan><tspan
+           sodipodi:role="line"
+           x="66.45195"
+           y="141.70955"
+           style="stroke-width:0.264583"
+           id="tspan2815" /><tspan
+           sodipodi:role="line"
+           x="66.45195"
+           y="147.00121"
+           style="stroke-width:0.264583"
+           id="tspan2817">Source n</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
          x="138.9034"
          y="-73.950195"
-         style="stroke-width:0.264583">…</tspan></text>
-    <g
-       id="g2894-8"
-       transform="translate(0,38.850348)">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.26173px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 61.655441,79.288652 v 27.369998 0"
-         id="path2841-6" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 61.533832,85.977112 h 3.648252 v 0"
-         id="path2858-2" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 61.533832,96.557041 h 3.648252 v 0"
-         id="path2858-8-4" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 61.533832,106.52636 h 3.648252 v 0"
-         id="path2858-3-1" />
+         id="text2821-0"
+         transform="rotate(90)"><tspan
+           sodipodi:role="line"
+           id="tspan2819-7"
+           x="138.9034"
+           y="-73.950195"
+           style="stroke-width:0.264583">…</tspan></text>
+      <g
+         id="g2894-8"
+         transform="translate(0,38.850348)">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.26173px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 61.655441,79.288652 v 27.369998 0"
+           id="path2841-6" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 61.533832,85.977112 h 3.648252 v 0"
+           id="path2858-2" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 61.533832,96.557041 h 3.648252 v 0"
+           id="path2858-8-4" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 61.533832,106.52636 h 3.648252 v 0"
+           id="path2858-3-1" />
+      </g>
     </g>
     <g
        id="g2985">
@@ -287,19 +298,26 @@
          y="69.525027"><tspan>Github repo:
 </tspan></tspan><tspan
          x="32.833984"
-         y="74.816691"><tspan>'Raw_Data' &gt; </tspan></tspan><tspan
-         x="32.833984"
-         y="80.108355"><tspan>'Source'</tspan></tspan></text>
+         y="74.816691"><tspan>'Raw-Data' &gt; </tspan><tspan>'Source'</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2995"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect2997);"><tspan
+       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect2997);"
+       transform="translate(0,-0.78618105)"><tspan
          x="68.587891"
-         y="58.760706"><tspan>Rename files as the following:
+         y="58.760706"><tspan>Rename files as the </tspan></tspan><tspan
+         x="68.587891"
+         y="64.05237"><tspan>following:
 </tspan></tspan><tspan
          x="68.587891"
-         y="64.05237"><tspan>DateDownloaded_Source_Vari</tspan></tspan><tspan
+         y="69.344035"><tspan>'</tspan><tspan>DateDownloaded-Source-</tspan></tspan><tspan
          x="68.587891"
-         y="69.344035"><tspan>able/VariableGroup</tspan></tspan></text>
+         y="74.635699"><tspan>Vari</tspan><tspan>able/VariableGroup'</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text923"
+       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect925);"><tspan
+         x="120.75781"
+         y="59.002894"><tspan>Include each data file</tspan></tspan></text>
   </g>
 </svg>
