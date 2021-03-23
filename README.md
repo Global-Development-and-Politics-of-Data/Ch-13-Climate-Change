@@ -1,2 +1,2 @@
-# Climate Change and Energy
+# Climate Change
  Data module content and scripts
