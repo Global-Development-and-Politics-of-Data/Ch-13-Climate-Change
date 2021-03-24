@@ -1,0 +1,54 @@
+---
+title: 'Title of Document'
+author: "Author Name"     ### I removed all the author lines in other files because we're writing it together and we're submitting it as a chapter
+date: "`r format(Sys.time(), '%d %B, %Y')`" ### This updates the date everytime we export the document into Word
+output:
+  word_document:
+    reference_docx: ../Templates/template.docx ## We will be exporting our work in word format and I've created a template for how it looks
+  html_document:
+    df_print: paged
+  pdf_document: default
+bibliography: ../Bibliography/Climate-Change.bib # This is our Zotero's collection and it continuously syncs as we add sources
+suppress-bibliography: true # since we're using full citations in the endnotes, I'm suppressing the printing of the bibliography for now.
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl ### This is the citation style, if we ever want to switch it to short notes, or even apa, we just switch the file name.
+---
+
+# Heading level 1
+
+To create a heading in Rmarkdown you use the \# character.
+
+## Heading level 2
+
+Increasing heading levels just means adding another \# character. Make sure you add a space after the hash and the first word of your heading's title.
+
+```{r}
+# Any coding goes in here
+
+```
+
+![Image title](imagefile.png)
+
+[link text](http://www.google.com)
+
+*Italic text*
+
+**Bold Text**
+
+## Citations in Rstudio and Rmarkdown
+
+### Preliminary setup
+
+Run the following code chunk **ONCE** (click on the two green right arrows consecutively) before working with citations:
+
+```{r eval=FALSE}
+install.packages("devtools")
+```
+```{r eval=FALSE}
+devtools::install_github("crsh/citr", force = TRUE)
+```
+
+Restart the R session by going to "Session \> Restart R"
+
+If you click on "Addins" it will load a new window with a list of all the citations in the file called "Climate-Change.bib." This package provides an autocomplete capability to your list of references.
+
+If writing in pure rmarkdown is not for you, RStudio has a new feature called visual mode (latest version of RStudio). If you click on cog icon next to "Knit," you will find an option called use visual editor. This will format your Rmarkdown in real time just like in a word document or google docs. To exit this view just uncheck the option.

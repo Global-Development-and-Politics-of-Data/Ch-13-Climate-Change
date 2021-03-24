@@ -1,14 +1,15 @@
 ---
-title: 'Data Politics: Vulnerability'
+title: 'Data Module'
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  word_document: default
+  word_document:
+    reference_docx: ../Templates/template.docx
   html_document:
     df_print: paged
   pdf_document: default
-bibliography: ../PRP_Climate_Change.bib
+bibliography: ../Bibliography/Climate-Change.bib
 suppress-bibliography: true
-csl: ../chicago-fullnote-bibliography-with-ibid.csl
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
 ---
 
 
