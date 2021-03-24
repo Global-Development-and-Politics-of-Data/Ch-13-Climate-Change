@@ -1,0 +1,28 @@
+--- 
+title: "Climate Change"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+link-citations: yes
+description: "This is a minimal example of using the officedown package to write a Word document."
+---
+
+```{r include=FALSE}
+library(knitr)
+library(officedown)
+library(officer)
+library(magrittr)
+library(ggplot2)
+opts_chunk$set(echo = TRUE, warning = FALSE,
+                      fig.cap.style = "Image Caption",
+                      fig.cap.pre = "Figure 13.",
+                      fig.cap.sep = ": ",
+                      out.extra = '',
+                      tidy.opts=list(width.cutoff=50), 
+                      tidy=TRUE)
+```
+
+

@@ -52,3 +52,6 @@ Restart the R session by going to "Session \> Restart R"
 If you click on "Addins" it will load a new window with a list of all the citations in the file called "Climate-Change.bib." This package provides an autocomplete capability to your list of references.
 
 If writing in pure rmarkdown is not for you, RStudio has a new feature called visual mode (latest version of RStudio). If you click on cog icon next to "Knit," you will find an option called use visual editor. This will format your Rmarkdown in real time just like in a word document or google docs. To exit this view just uncheck the option.
+
+
+[More Rmarkdown authoring basics](https://rmarkdown.rstudio.com/authoring_basics.html)

@@ -1,0 +1,138 @@
+--- 
+title: "Climate Change"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+link-citations: yes
+description: "This is a minimal example of using the officedown package to write a Word document."
+---
+
+```{r include=FALSE}
+library(knitr)
+library(officedown)
+library(officer)
+library(magrittr)
+library(ggplot2)
+opts_chunk$set(echo = TRUE, warning = FALSE,
+                      fig.cap.style = "Image Caption",
+                      fig.cap.pre = "Figure 13.",
+                      fig.cap.sep = ": ",
+                      out.extra = '',
+                      tidy.opts=list(width.cutoff=50), 
+                      tidy=TRUE)
+```
+
+
+
+<!--chapter:end:index.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+
+# Introduction
+
+<!--chapter:end:01-Introduction.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+# History
+
+
+
+
+```{r climate-change-timeline, fig.cap="major actors and frameworks in climate change and development", echo=FALSE, fig.height = 2.65, fig.width = 6.9}
+
+knitr::include_graphics("../Figures/Climate-Change-timeline.png")
+```
+
+<!--chapter:end:02-History.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+# Data Landscape
+
+## GHG Emissions
+
+<!--chapter:end:03-Data-Landscape-Emissions.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+## Climate Finance
+
+<!--chapter:end:03-Data-Landscape-Finance.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+## Human Vulnerability
+
+
+
+<!--chapter:end:03-Data-Landscape-Vulnerability.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+# Politics of Numbers
+
+## GHG Emissions
+
+<!--chapter:end:04-Data-Politics-Emissions.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+## Climate Finance
+
+<!--chapter:end:04-Data-Politics-Finance.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+
+## Human Vulnerability
+
+<!--chapter:end:04-Data-Politics-Vulnerability.Rmd-->
+
+---
+bibliography: ../Bibliography/Climate-Change.bib
+suppress-bibliography: true
+csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
+---
+
+# Conclusion
+
+
+<!--chapter:end:05-Conclusion.Rmd-->
+

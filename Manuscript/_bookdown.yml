@@ -1,0 +1,4 @@
+book_filename: "Climate-Change"
+delete_merged_file: false
+rmd_files: ["index.Rmd", "01-Introduction.Rmd", "02-History.Rmd", "03-Data-Landscape-Emissions.Rmd", "03-Data-Landscape-Finance.Rmd", "03-Data-Landscape-Vulnerability.Rmd", "04-Data-Politics-Emissions.Rmd", "04-Data-Politics-Finance.Rmd", "04-Data-Politics-Vulnerability.Rmd", "05-Conclusion.Rmd"]
+output_dir: "output"
