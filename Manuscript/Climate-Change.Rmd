@@ -7,7 +7,6 @@ bibliography: ../Bibliography/Climate-Change.bib
 suppress-bibliography: true
 csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
 link-citations: yes
-description: "This is a minimal example of using the officedown package to write a Word document."
 ---
 
 ```{r include=FALSE}
@@ -26,6 +25,8 @@ opts_chunk$set(echo = TRUE, warning = FALSE,
 ```
 
 
+```{r child = "01-Introduction.Rmd"}
+```
 
 <!--chapter:end:index.Rmd-->
 
@@ -36,15 +37,6 @@ csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
 ---
 
 
-# Introduction
-
-<!--chapter:end:01-Introduction.Rmd-->
-
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
 
 # History
 
@@ -89,6 +81,7 @@ csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
 ## Human Vulnerability
 
 
+Climate change impacts on human vulnerability vary widely across sectors and geographies. Measuring these impacts is usually complicated 
 
 <!--chapter:end:03-Data-Landscape-Vulnerability.Rmd-->
 
