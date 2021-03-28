@@ -1,3 +1,5 @@
+introduction
+what-is-climate-change
 history
 data-landscape
 ghg-emissions
@@ -8,8 +10,5 @@ ghg-emissions-1
 climate-finance-1
 climate-change-vulnerabilities-1
 conclusion
-introduction
-what-is-climate-change
-references
 endnotes
 bibliography
