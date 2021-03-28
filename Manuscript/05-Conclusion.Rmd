@@ -1,6 +1,5 @@
 ---
 bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
 csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
 ---
 

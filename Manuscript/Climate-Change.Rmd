@@ -4,9 +4,8 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
+#suppress-bibliography: true
 csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
-link-citations: yes
 ---
 
 ```{r include=FALSE}
@@ -28,104 +27,35 @@ opts_chunk$set(echo = TRUE, warning = FALSE,
 ```{r child = "01-Introduction.Rmd"}
 ```
 
-<!--chapter:end:index.Rmd-->
-
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
-
-
-
-# History
-
-
-
-
-```{r climate-change-timeline, fig.cap="major actors and frameworks in climate change and development", echo=FALSE, fig.height = 2.65, fig.width = 6.9}
-
-knitr::include_graphics("../Figures/Climate-Change-timeline.png")
+```{r child = "02-History.Rmd"}
 ```
 
-<!--chapter:end:02-History.Rmd-->
+```{r child = "03-Data-Landscape-Emissions.Rmd"}
+```
 
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
+```{r child = "03-Data-Landscape-Finance.Rmd"}
+```
 
-# Data Landscape
+```{r child = "03-Data-Landscape-Vulnerability.Rmd"}
+```
 
-## GHG Emissions
+```{r child = "04-Data-Politics-Emissions.Rmd"}
+```
 
-<!--chapter:end:03-Data-Landscape-Emissions.Rmd-->
+```{r child = "04-Data-Politics-Finance.Rmd"}
+```
 
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
+```{r child = "04-Data-Politics-Vulnerability.Rmd"}
+```
 
-## Climate Finance
-
-<!--chapter:end:03-Data-Landscape-Finance.Rmd-->
-
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
-
-## Human Vulnerability
+```{r child = "05-Conclusion.Rmd"}
+```
 
 
-Climate change impacts on human vulnerability vary widely across sectors and geographies. Measuring these impacts is usually complicated 
+# Endnotes
 
-<!--chapter:end:03-Data-Landscape-Vulnerability.Rmd-->
-
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
-
-# Politics of Numbers
-
-## GHG Emissions
-
-<!--chapter:end:04-Data-Politics-Emissions.Rmd-->
-
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
-
-## Climate Finance
-
-<!--chapter:end:04-Data-Politics-Finance.Rmd-->
-
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
+# Bibliography
 
 
-## Human Vulnerability
-
-<!--chapter:end:04-Data-Politics-Vulnerability.Rmd-->
-
----
-bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
-
-# Conclusion
-
-
-<!--chapter:end:05-Conclusion.Rmd-->
+<!--chapter:end:index.Rmd-->
 

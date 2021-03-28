@@ -1,6 +1,5 @@
 ---
 bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
 csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
 ---
 
@@ -28,22 +27,23 @@ First off, what is climate change and more specifically what does "anthropogenic
 
     - Example: Lowest emitting nations feeling the most violent impacts (former colonies)
 
-- What is loss damage (max 20 words)
-
-    - Real-world example (max 30 w)
-
-- How do these all relate to development? (25 words)
-
-- Transition sentence to timeline history section (25 words)
 
 When  talking about climate change, two main dimensions come up in this conversation: mitigation and adaptation. These two dimensions are usually talked about in terms of solutions or responses to their associated issues. To familiarize ourselves with these concepts, we will look into their definitions and illustrate a few examples.
 
-UNFCCC defines climate change mitigation as "the human intervention to reduce the sources or enhances the sinks of greenhouse gases."[@UNFCCC2021] Some these interventions include national-level policies to reduce GHG emissions by regulating various sectors, such as industry or transportation. Another mitigation intervention would be individuals reducing their consumption of fossil fuels or GHG-emitting activities. Lastly, increasing the capacity of carbon sinks that absorb CO_2 from the atmosphere through planting trees or implementing other technologies that capture and store Carbon is an example of climate change mitigation.
+UNFCCC defines climate change mitigation as "the human intervention to reduce the sources or enhances the sinks of greenhouse gases."[@UNFCCC2021] Some these interventions include national-level policies to reduce GHG emissions by regulating various sectors, such as industry or transportation. Another mitigation intervention would be individuals reducing their consumption of fossil fuels or GHG-emitting activities. Lastly, increasing the capacity of carbon sinks that absorb CO~2~ from the atmosphere through planting trees or implementing other technologies that capture and store Carbon is an example of climate change mitigation.
 
-Climate change adaptation, on the other hand, is defined as the responses to either real or expected climate change-related events that reduces the harms from these effects or produces potential opportunities.[@UNFCCC2021] Some example of climate change adaptive responses national adaptation plans (NAP), projects that protect communities from sea-level rises, and agricultural policies that respond to persistent droughts.
+Climate change adaptation, on the other hand, is defined as the responses to either real or expected climate change-related events that reduce the harms from these effects or produces potential opportunities.[@UNFCCC2021] Some example of climate change adaptive responses are national adaptation plans (NAP), projects that protect communities from sea-level rises, and agricultural policies that respond to persistent droughts.
 
+- What is loss damage (max 20 words)
+
+    - Real-world example (max 30 w)
 Finally, the increasing climate-related events have caused much harm to many communities around the world. These impacts brought on a global conversation on issues of loss and damage due to climate-related events.[@UNFCCC2013] **[MISSING EXAMPLES OF LOSS AND DAMAGE]**
 
 In order to fully get the picture of how these concepts and terminologies came about in the conversation on global development and climate change, it is important the history of actors and frameworks that shaped the ideas and translated **(?; didn't want it to sound too academese)** these concepts into the indicators that we will later talk about more in-depth.
 
+
+
+- How do these all relate to development? (25 words)
+
+- Transition sentence to timeline history section (25 words)
 

@@ -4,9 +4,8 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: ../Bibliography/Climate-Change.bib
-suppress-bibliography: true
+#suppress-bibliography: true
 csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
-link-citations: yes
 ---
 
 ```{r include=FALSE}
@@ -27,3 +26,33 @@ opts_chunk$set(echo = TRUE, warning = FALSE,
 
 ```{r child = "01-Introduction.Rmd"}
 ```
+
+```{r child = "02-History.Rmd"}
+```
+
+```{r child = "03-Data-Landscape-Emissions.Rmd"}
+```
+
+```{r child = "03-Data-Landscape-Finance.Rmd"}
+```
+
+```{r child = "03-Data-Landscape-Vulnerability.Rmd"}
+```
+
+```{r child = "04-Data-Politics-Emissions.Rmd"}
+```
+
+```{r child = "04-Data-Politics-Finance.Rmd"}
+```
+
+```{r child = "04-Data-Politics-Vulnerability.Rmd"}
+```
+
+```{r child = "05-Conclusion.Rmd"}
+```
+
+
+# Endnotes
+
+# Bibliography
+
