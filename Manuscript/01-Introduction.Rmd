@@ -3,47 +3,82 @@ bibliography: ../Bibliography/Climate-Change.bib
 csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
 ---
 
+# Abstract
+
+Climate change has been coined the existential threat of our time. To derive appropriate interventions in development practice requires good data governance and precise measurement. This chapter explores three main indicators relating to ideas of mitigation, adaptation, and resilience through finance SDG Goal 13’s indicator framework, established by the United Nation Climate Change proceedings (UNFCCC). 
+
+The chapter begins with an overview of climate change history, key players, and the relationship to development through international processes. The chapter than dives into the outlined indicators illustrating dynamics within them such as disaster and hazard data not being disaggregated by exclusively climate-related events in SDG target 13.1.1, illustrating the ways that countries can obfuscate their responsibility for climate change through their representations of existing emissions data in SDG target 13.2.2, and the data deprivations and overrepresentation politics of climate finance data and the surrounding rhetoric in SDG target 13.a.1. 
+
+Employing a critical lens on current data issues to further assess the degree of alignment within climate priorities in development practice, this chapter sheds light on how proper data collection can empower meaningful climate solutions. Ultimately, the reader should understand how the use of data can either make or break climate action by understanding how key players contributing to the intensification of climate change impacts uphold data deprivations, misuse of information, and the lack of clear definitions thus creating unequal conditions in climate and development. By critically identifying the politics of data, we are able to assess what information is needed and what questions to ask to unstick international trust and momentum on climate change that does not leave behind the perspectives of those being disproportionately impacted by climate change. 
+
+# Hook
+
+Possible Hook: Youth statements about action/inaction at UNFCCC/related meetings
+
+-   Severn 1992 Rio Earth Summit (1992): <https://www.youtube.com/watch?v=JGdS8ts63Ck>
+
+    -   Coming up here today, I have no hidden agenda. I am fighting for my future. Losing my future is not like losing an election, or a few points on the stock market.
+
+    -   I am here to speak for all generations to come. I am here to speak -- speak on behalf of the starving children around the world whose cries go unheard. I am here to speak for the countless animals dying across this planet, because they have nowhere left to go. I am afraid to go out in the sun now, because of the holes in our ozone. I am afraid to breathe the air, because I don't know what chemicals are in it.
+
+    -   Parents should be able to comfort their children by saying, "Everything's going to be alright; it's not the end of the world, and we're -- and we're doing the best we can." But I don't think you can say that to us anymore. Are we even on your list of priorities?
+
+    -   My dad always says, "You are what you do, not what you say." Well, what you do makes me cry at night. You grown-ups say you love us. But I challenge you, please, make your actions reflect your words.
+
+-   Anjali COP17 (2011): <https://www.youtube.com/watch?v=Ko3e6G_7GY4>
+
+    -   "I speak for more than half the world's population. We are the silent majority. You've given us a seat in this hall, but our interests are not on the table"
+
+    -   "You've been negotiating all my life. In that time, you've failed to meet pledges, you've missed targets, and you've broken promises. But you've heard this all before."
+
+-   Greta COP 24 (2018): <https://www.youtube.com/watch?v=VFkQSGyeCWg>
+
+    -   "You say you love your children above all else, and yet you are stealing their future in front of their very eyes."
+
+    -   "Until you start focusing on what needs to be done rather than what is politically possible, there is no hope. We cannot solve a crisis without treating it as a crisis."
+
+    -   "We need to keep the fossil fuels in the ground, and we need to focus on equity. And if solutions within the system are so impossible to find, maybe we should change the system itself."
+
+    -   "We have not come here to beg world leaders to care. You have ignored us in the past and you will ignore us again."
+
+-   Related, but not UNFCCC related: <https://www.kathyjetnilkijiner.com/united-nations-climate-summit-opening-ceremony-my-poem-to-my-daughter/>
 
 # Introduction
 
+While every SDG is related to climate change (they are the *sustainable* development goals, after all), this chapter will be focusing on the data and politics behind specific targets and indicators within Goal 13: "Take urgent action to combat climate change and its impacts" or in short-hand, Climate Action\*. As you may notice, unlike other SDGs there is an asterisk next to Climate Action\* for SDG Goal 13. This is "acknowledging that the United Nations Framework Convention on Climate Change (UNFCCC) is the primary international, intergovernmental forum for negotiating the global response to climate change."[@UnitedNations2021] So, to help you understand the importance of the specific subset of indicators we'll be exploring together in this chapter (see Table 13.1), we'll quickly review some of the key players, events, and processes that have informed the climate conversation to date and will determine what climate action can and will look like both within the SDGs and beyond.
 
 
+
+
+```{r sdg-indicators, echo = FALSE, tab.cap="SDG targets and indicators as focus of this chapter[@UnitedNations2020]"}
+sdg_indicators <- data.frame("Target" = c("13.1: Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries", "13.2: Integrate climate change measures into national policies, strategies and planning", "13.a: Implement the commitment undertaken by developed-country parties to the United Nations Framework Convention on Climate Change to a goal of mobilizing jointly $100 billion annually by 2020 from all sources to address the needs of developing countries in the context of meaningful mitigation actions and transparency on implementation and fully operationalize the Green Climate Fund through its capitalization as soon as possible"), "Indicator" = c("13.1.1: Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population", "13.2.2: Total greenhouse gas emissions per year", "13.a.1: Amounts provided and mobilized in United States dollars per year in relation to the continued existing collective mobilization goal of the $100 billion commitment through to 2025"))
+
+sdg_indicators
+```
 
 
 ## What is Climate Change?
 
+Before diving into our exploration of the existing actors and pathways for addressing climate change, we will briefly go through some key terms and concepts that will frame the way you understand the timeline of events. 
 
-Before diving into the discussion about the existing actors and pathways for addressing climate change, we will briefly go through some key terms and concepts that will frame the way you understand the timeline of events. 
+First, what is climate change and more specifically what does ___anthropogenic___ mean? The planet is experiencing an unnatural concentration of greenhouse gasses in the atmosphere caused by human activity, or, anthroponic. According to a 2018 report by the Intergovernmental Panel on Climate Change (IPPC), "Human activities are estimated to have caused approximately 1.0$^\circ$C of global warming above pre-industrial levels, with a _likely_ range of 0.8$^\circ$C to 1.2$^\circ$C."[@IPCC2018] The spike in concentrations of greenhouse gasses has been identified to be driven by human activity is caused by burning hydrocarbons (coal, natural gas) for everything from energy and transportation to new age farming practices (tilling, industrializing meat production), and even the technologies we use everyday like our computers and cell phones. 
 
-First off, what is climate change and more specifically what does "anthropogenic" mean? 
+As noted in the IPCC, the industrial revolution is where our story truly begins. When we relate development and climate change, it is helpful for us to think about how colonialism, especially the violent extraction of resources from colonies bolstered by racism, classism, and sexism, allowed for a rapid industrialization process in countries that we now call _developed_ leaving the pillaged colonized nations as _developing_ or _underdeveloped_.[@Abimbola2021]  __[illustrative example to be added that shows extraction from X country to be used in Y country to accumulate wealth/develop; this former colony depends on aid from former empire who is big emitter]__
 
-- Anthropogenic cc: development + fossil fuels = emissions, warming etc. (50 words)
+Recognizing that climate change has been created and continues to worsen because of the actions of rich, developed countries while the communities that have caused the least of the emissions or other contributions are feeling the harshest impacts, advocates have used the frame _climate justice_ to center the voices and experiences of those pushed to the margins.[@CorpWatch2002] __[illustrative example to be added, such as lowest emitting nations feeling the most violent impacts (former colonies and current colonies see: Puerto Rico)]__ 
 
-    - Legacies of colonialism and racial injustice (35 words)
+To further understand how we got to where we are today with current climate change goals within the SDGs and the associated UN processes, we will take you on a trip through the last 50 years of climate change and development history. 
 
-    - Example(s): extraction from X country to be used in Y country to accumulate wealth/develop 
-
-- Climate Justice
-
-    - Example: Lowest emitting nations feeling the most violent impacts (former colonies)
+__[Pull out box 13.xx]__ 
 
 
-When  talking about climate change, two main dimensions come up in this conversation: mitigation and adaptation. These two dimensions are usually talked about in terms of solutions or responses to their associated issues. To familiarize ourselves with these concepts, we will look into their definitions and illustrate a few examples.
+When talking about climate change, two main dimensions come up in this conversation: mitigation and adaptation. These two dimensions are usually talked about in terms of solutions or responses to their associated issues. To familiarize ourselves with these concepts, we will look into their definitions and illustrate a few examples.
 
 UNFCCC defines climate change mitigation as "the human intervention to reduce the sources or enhances the sinks of greenhouse gases."[@UNFCCC2021] Some these interventions include national-level policies to reduce GHG emissions by regulating various sectors, such as industry or transportation. Another mitigation intervention would be individuals reducing their consumption of fossil fuels or GHG-emitting activities. Lastly, increasing the capacity of carbon sinks that absorb CO~2~ from the atmosphere through planting trees or implementing other technologies that capture and store Carbon is an example of climate change mitigation.
 
 Climate change adaptation, on the other hand, is defined as the responses to either real or expected climate change-related events that reduce the harms from these effects or produces potential opportunities.[@UNFCCC2021] Some example of climate change adaptive responses are national adaptation plans (NAP), projects that protect communities from sea-level rises, and agricultural policies that respond to persistent droughts.
 
-- What is loss damage (max 20 words)
-
-    - Real-world example (max 30 w)
 Finally, the increasing climate-related events have caused much harm to many communities around the world. These impacts brought on a global conversation on issues of loss and damage due to climate-related events.[@UNFCCC2013] **[MISSING EXAMPLES OF LOSS AND DAMAGE]**
 
 In order to fully get the picture of how these concepts and terminologies came about in the conversation on global development and climate change, it is important the history of actors and frameworks that shaped the ideas and translated **(?; didn't want it to sound too academese)** these concepts into the indicators that we will later talk about more in-depth.
-
-
-
-- How do these all relate to development? (25 words)
-
-- Transition sentence to timeline history section (25 words)
 
