@@ -1,2 +1,9 @@
 # Climate Change
- Data module content and scripts
+ 
+ 
+ [Module abstract]
+ 
+ 
+ # Project workflow
+ 
+ ![](Figures/workflow-schema.png)

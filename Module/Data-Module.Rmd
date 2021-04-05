@@ -1,6 +1,7 @@
 ---
 title: 'Data Module'
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+#author: 
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   word_document:
     reference_docx: ../Templates/template.docx
@@ -38,7 +39,7 @@ Finally, students may have the chance to explore the differential impacts of cli
 # Problem Set
 
 
-You are a climate policy analyst working for a non-governmental organization participating in the next round of negotiations at the Conference of Parties. Your manager asks you to visualize the most recent data on GHG emissions to help defend your NGO's stance of __________(we could say something like defending “pick country of your choosing”) and to create a one-page memo that includes the following visualizations:
+You are a climate policy analyst working for a non-governmental organization participating in the next round of negotiations at the Conference of Parties. Your manager asks you to visualize the most recent data on GHG emissions to help defend your NGO's stance of __________(we could say something like defending "pick country of your choosing") and to create a one-page memo that includes the following visualizations:
 
 1. A map of only CO~2~ emissions by country.
 2. A map of GHG emissions (minus CO~2~) by country.
