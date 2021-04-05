@@ -24,9 +24,9 @@ The following [steps](https://di.unfccc.int/flex_annex1) are for each drop-down 
 
 5.  **Select Type of Value**: 'Net emissions/removals'
 
-6.  **Select Gas**: 'Aggregate GHGs,' 'CO~2~,' and 'CH~4~'
+6.  **Select Gas**: 'Aggregate GHGs,' 'CO<sub>2</sub>,' and 'CH<sub>4</sub>'
 
-Once the query is submitted and you see the table go to the 'Unit' tab and unselect 'kt,' which means all your GHG emissions values are in kt CO~2~ equivalent.
+Once the query is submitted and you see the table go to the 'Unit' tab and unselect 'kt,' which means all your GHG emissions values are in kt CO<sub>2</sub> equivalent.
 
 ## Non-Annex I
 
@@ -36,9 +36,9 @@ The Non-Annex I [steps](https://di.unfccc.int/flex_non_annex1) are similar to th
 
 -   **Select Category**: 'Total GHG emissions excluding LULUCF/LUCF' and 'Total GHG emissions including LULUCF/LUCF'
 
-Once the query is submitted and you see the table go to the 'Unit' tab and unselect 'Gg,' which means all your GHG emissions values are in Gg CO~2~ equivalent.
+Once the query is submitted and you see the table go to the 'Unit' tab and unselect 'Gg,' which means all your GHG emissions values are in Gg CO<sub>2</sub> equivalent.
 
-Please note that $1\; kt = 1\; Gg$.
+Please note that 1 kt = 1 Gg.
 
 
 ## Codebook
