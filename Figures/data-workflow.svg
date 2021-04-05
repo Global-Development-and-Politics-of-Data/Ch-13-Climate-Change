@@ -13,7 +13,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="data-workflow.svg">
+   sodipodi:docname="data-workflow.svg"
+   inkscape:export-filename="C:\Users\Noorah\Dropbox\Climate-Change\Figures\data-workflow.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
   <defs
      id="defs2">
     <rect
@@ -104,7 +107,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.0149341"
      inkscape:cx="285.52688"
-     inkscape:cy="271.71219"
+     inkscape:cy="200.24583"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -130,6 +133,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:0.99655;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.349999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.072;stroke-opacity:1"
+       id="rect1251"
+       width="178.58318"
+       height="117.26086"
+       x="16.807829"
+       y="2.2322896"
+       ry="0" />
     <text
        xml:space="preserve"
        id="text892"
