@@ -1,0 +1,26 @@
+---
+title: Memorandum
+output:
+  word_document:
+    reference_docx: ../../Templates/memo_template.docx
+---
+
+|**To:** |  Name of, Supervisor's position|
+|------|------|
+| **From**:     |  Me, My position    |
+|  **Date**:    |     Month date, Year |
+|   **Subject**:   |     Subject of memo |
+
+---
+
+
+# Section 1
+
+
+## Subsection 1.1
+
+
+# Section 2
+
+
+## Subsection 2.1
