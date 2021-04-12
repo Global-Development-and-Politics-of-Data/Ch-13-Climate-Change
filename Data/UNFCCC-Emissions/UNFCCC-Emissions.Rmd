@@ -20,6 +20,17 @@ knitr::opts_chunk$set(echo = TRUE,
 
 # Install and load libraries
 
+We need to first install all the required packages for the data cleaning process. If you have never used the packages below, it is more likely that you have not installed them on your machine either. Please make sure you install each of the packages below using the following command:
+
+```{r eval=FALSE, warning=FALSE, message=FALSE}
+install.packages("openxlsx")
+install.packages("tidyverse")
+install.packages("janitor")
+install.packages("knitr")
+```
+
+Then you need to load the following packages:
+
 ```{r load libraries, warning=FALSE, message=FALSE}
 library(openxlsx)
 library(tidyverse)
@@ -27,16 +38,19 @@ library(janitor)
 library(knitr)
 ```
 
-- `openxlsx`: 
 
-- `tidyverse`:
+- `openxlsx`: a package that reads excel files and imports them into R. There are other packages that do the same thing, such as `readxl`, but we've chosen this package because it does a better job at dealing with merged cells within excel sheets.
 
-- `janitor`:
+- `tidyverse`: a suite of R packages that deal with data management and general wrangling. In this document we will be using mostly `dplyr`, `tidyr`, and `stringr`.
 
-- `knitr`:
+- `janitor`: a package that cleans and renames variable or columns names into something more consistent and coherent.
+
+- `knitr`: a package that works with R markdown and exports documents into different formats such as Word, PDF, or HTML. In the case of this document we use `knitr` to convert all the code chunks here into a full-length R script.
+
 
 # Data Import and Wrangling
 
+This section is the bulk of the data cleaning process.
 
 ## Import data
 
@@ -52,6 +66,15 @@ Annex_I_emissions <- openxlsx::read.xlsx("Annual-Net-emissions-removals-Annex-I-
 ```
 
 
+If you open the excel sheet associated with this document, you will find that the first five rows look a bit funny and we need to find a way to import this data without losing any of the information. We've also noticed that there is some text at the bottom of the excel sheet which we shouldn't import into R. This is why we specified that R only imports rows 5 to 96.
+
+
+Importing excel files into R can sometimes be more tedious because it uses a lot of formatting functions such as merging cells in this case. R does not know how to read merged cells and would view them as a single cell. Therefore, we use the `openxlsx` package because it has a function that deals with this issue.
+
+We then use `janitor` to clean the variable names by converting all the names to lowercase and replace empty spaces with underscores. That way it is easier to work with these variables because R cannot read spaces when working with objects' names.
+
+
+
 ### Non-Annex I parties
 
 ```{r import data (Non-Annex I)}
@@ -64,6 +87,8 @@ Non_Annex_I_emissions <- openxlsx::read.xlsx("Annual-Net-emissions-removals-Non-
 
 ## Clean variables
 
+Now we need to do some further cleaning and renaming of the dataset because not everything got imported in a perfect fashion. For example, the first row of the dataset is a whole row of only units of measurement. We therefore do not need it and should just remove it. Another example is that the member parties' column has an empty cell as a header within the excel sheet. As a result, R named the empty header `X`. As such we renamed that column to `party`. Finally, the GHG variable did not import correctly and to save time in coding, we decided to remove `aggregate` part of the variable name. As such we renamed all the variables from `aggregate_gh_gs` to `ghg`.
+
 ### Annex I parties
 
 ```{r clean main dataframe (Annex I), warning=FALSE, message=FALSE}
@@ -72,7 +97,7 @@ Annex_I_emissions <- Annex_I_emissions[-c(1),]
 colnames(Annex_I_emissions)[1] <- "party"
 
 Annex_I_emissions <- Annex_I_emissions %>% 
-  dplyr::rename_all(funs(str_replace_all(., "gh_gs", "ghg")))
+  dplyr::rename_all(funs(stringr::str_replace_all(., "aggregate_gh_gs", "ghg")))
 ```
 
 ### Non-Annex I parties
@@ -83,21 +108,19 @@ Non_Annex_I_emissions <- Non_Annex_I_emissions[-c(1),]
 colnames(Non_Annex_I_emissions)[1] <- "party"
 
 Non_Annex_I_emissions <- Non_Annex_I_emissions %>% 
-  dplyr::rename_all(funs(str_replace_all(., "gh_gs", "ghg")))
+  dplyr::rename_all(funs(stringr::str_replace_all(., "aggregate_gh_gs", "ghg")))
 ```
 
 ## Disaggreagate data by gas type
 
 
+Right now the dataset is in wide format, which means that the values are spread across countries and years instead of being associated with their true variable which is gas type. The wide is helpful if we want to view the dataset as whole, but can get problematic when we need it to conduct analysis or produce visuals within R.
+
+Another issue we had is that years were not imported into R in the correct way. If you take look at the imported dataset, you will see that `co2` and `aggregate_gh_gs` are repeated multiple times throughout the dataset. What we do know, however is that the years begin after column `gas` and are from "Base year" to 2018 for Annex I and from 1990 to 2018 for Non-Annex I. Keeping that in mind, we first need to split the dataset by gas type, then rename columns four to 32 (Annex I) and three to 31 (Non-Annex I) to their associated years.
+
 ### Annex I parties
 
 ```{r disaggregate dataframe by gas type (Annex I)}
-Annex_I_emissions_ch4 <- Annex_I_emissions %>% 
-  dplyr::select("party", "gas", contains("ch4")) %>% 
-  dplyr::rename("base_year" = "ch4")
-
-colnames(Annex_I_emissions_ch4)[4:32] <- 1990:2018
-
 Annex_I_emissions_co2 <- Annex_I_emissions %>% 
   dplyr::select("party", "gas", contains("co2")) %>% 
   dplyr::rename("base_year" = "co2")
@@ -106,7 +129,7 @@ colnames(Annex_I_emissions_co2)[4:32] <- 1990:2018
 
 Annex_I_emissions_ghg <- Annex_I_emissions %>% 
   dplyr::select("party", "gas", contains("ghg")) %>% 
-  dplyr::rename("base_year" = "aggregate_ghg")
+  dplyr::rename("base_year" = "ghg")
 
 colnames(Annex_I_emissions_ghg)[4:32] <- 1990:2018
 ```
@@ -115,11 +138,6 @@ colnames(Annex_I_emissions_ghg)[4:32] <- 1990:2018
 ### Non-Annex I parties
 
 ```{r disaggregate dataframe by gas type (Non-Annex I)}
-Non_Annex_I_emissions_ch4 <- Non_Annex_I_emissions %>% 
-  dplyr::select("party", "gas", contains("ch4"))
-
-colnames(Non_Annex_I_emissions_ch4)[3:31] <- 1990:2018
-
 Non_Annex_I_emissions_co2 <- Non_Annex_I_emissions %>% 
   dplyr::select("party", "gas", contains("co2"))
 
@@ -133,57 +151,59 @@ colnames(Non_Annex_I_emissions_ghg)[3:31] <- 1990:2018
 
 ## Convert datasets to long
 
+Here we convert the dataset to long. We also created a new column that specifies each party's group name. That way it's easier to conduct analyses by groups.
+
 ### Annex I parties
 
 ```{r convert datasets to long (Annex I)}
-Annex_I_emissions_ch4 <- Annex_I_emissions_ch4 %>% 
-  tidyr::gather(year, ch4, base_year:`2018`)
-
 Annex_I_emissions_co2 <- Annex_I_emissions_co2 %>% 
-  tidyr::gather(year, co2, base_year:`2018`)
+  tidyr::gather(year, co2, base_year:`2018`) %>% 
+  mutate(group = "Annex I")
 
 Annex_I_emissions_ghg <- Annex_I_emissions_ghg %>% 
-  tidyr::gather(year, ghg, base_year:`2018`)
+  tidyr::gather(year, ghg, base_year:`2018`) %>% 
+  mutate(group = "Annex I")
 ```
 
 ### Non-Annex I parties
 
 ```{r convert datasets to long (Non-Annex I)}
-Non_Annex_I_emissions_ch4 <- Non_Annex_I_emissions_ch4 %>% 
-  tidyr::gather(year, ch4, `1990`:`2018`)
-
 Non_Annex_I_emissions_co2 <- Non_Annex_I_emissions_co2 %>% 
-  tidyr::gather(year, co2, `1990`:`2018`)
+  tidyr::gather(year, co2, `1990`:`2018`) %>% 
+  mutate(group = "Non-Annex I")
 
 Non_Annex_I_emissions_ghg <- Non_Annex_I_emissions_ghg %>% 
-  tidyr::gather(year, ghg, `1990`:`2018`)
+  tidyr::gather(year, ghg, `1990`:`2018`) %>% 
+  mutate(group = "Non-Annex I")
 ```
 
 
 ## Merge datasets back
 
+We merge the long datasets back by columns so we can have one column for total GHG emissions and one column for CO~2~ only. We will also remove the split datasets since we won't be needing them any longer.
+
 ### Annex I parties
 
 ```{r merge datasets back (Annex I)}
 Annex_I_emissions <- Annex_I_emissions_ghg %>% 
-  dplyr::full_join(Annex_I_emissions_co2, by =c("party", "gas", "year")) %>%
-  dplyr::full_join(Annex_I_emissions_ch4, by =c("party", "gas", "year"))
+  dplyr::full_join(Annex_I_emissions_co2, by =c("party", "gas", "year", "group"))
 
-rm(Annex_I_emissions_ch4,Annex_I_emissions_co2,Annex_I_emissions_ghg)
+rm(Annex_I_emissions_co2,Annex_I_emissions_ghg)
 ```
 
 ### Non-Annex I parties
 
 ```{r merge datasets back (Non-Annex I)}
 Non_Annex_I_emissions <- Non_Annex_I_emissions_ghg %>% 
-  dplyr::full_join(Non_Annex_I_emissions_co2, by =c("party", "gas", "year")) %>% 
-  dplyr::full_join(Non_Annex_I_emissions_ch4, by =c("party", "gas", "year"))
+  dplyr::full_join(Non_Annex_I_emissions_co2, by =c("party", "gas", "year", "group"))
 
-rm(Non_Annex_I_emissions_ch4,Non_Annex_I_emissions_co2,Non_Annex_I_emissions_ghg)
+rm(Non_Annex_I_emissions_co2,Non_Annex_I_emissions_ghg)
 ```
 
 
 ## Merge Annex I and Non-Annex I
+
+Next we will merge Annex I and Non-Annex I by rows, and rename the values for `gas` the same for both Annex I and Non-Annex I to keep things consistent.
 
 ```{r Merge Annex I and Non-Annex I dataframes, message=FALSE, warning=FALSE}
 UNFCCC_Emissions <- dplyr::bind_rows(Annex_I_emissions,Non_Annex_I_emissions) %>%
@@ -192,11 +212,11 @@ UNFCCC_Emissions <- dplyr::bind_rows(Annex_I_emissions,Non_Annex_I_emissions) %>
   dplyr::mutate(type = stringr::str_replace(type,"Total GHG emissions including LULUCF/LUCF", "Total GHG emissions with LULUCF")) %>%
   readr::type_convert() %>%
   dplyr::mutate_if(is.character, as.factor)
-
-rm(Annex_I_emissions, Non_Annex_I_emissions)
 ```
 
 ## Export as a CSV file
+
+Now we will export our clean dataset as an CSV file so we can conduct our analyses in the Analysis folder.
 
 ```{r export as a csv file}
 write.csv(UNFCCC_Emissions, "UNFCCC-Emissions-clean.csv")
