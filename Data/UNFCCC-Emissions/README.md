@@ -46,7 +46,7 @@ Please note that 1 kt = 1 Gg.
 | Variable      | Description     | Unit of measurement | Data type     | Notes        |
 | -----------   | -----------     | ------------------- | ------------- | ------------ |
 | `party`       | Territory name  | Not applicable      | Categorical   |              |
-| `type`        | Emissions that include or exclude Land Use, Land-Use Change and Forestry (LULUCF)| Not applicable | Categorical |      |
+| `type`        | Emissions that include or exclude<br />Land Use, Land-Use Change and Forestry (LULUCF)| Not applicable | Categorical |      |
 | `year`        | Gregorian year  | Annual year         | Categorical   |              |
 | `ghg`         | Total GHG emissions | kt or Gg of CO<sub>2</sub> equivalent | Numerical | GHG include the following: <br /> 1. Carbon dioxide (CO<sub>2</sub>) <br /> 2. Methane (CH<sub>4</sub>) <br /> 3. Nitrous oxide (N<sub>2</sub>) <br /> 4. Hydrofluorocarbons (HFCs) <br /> 5. Perfluorocarbons (PFCs) <br /> 6. Sulphur Hexafluoride (SF<sub>6</sub>) |
 | `co2`         | Total CO<sub>2</sub> emissions | kt or Gg of CO<sub>2</sub> | Numerical | Only measures CO<sub>2</sub> emissions |
