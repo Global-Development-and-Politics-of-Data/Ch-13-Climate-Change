@@ -6,7 +6,7 @@ Details on how to use the interface and query specific data can be found [here](
 
 # GHG Emissions
 
-Generally speaking, there are six steps required to query the raw dataset that is provided in this module. The data collected in this module is as of **April 4, 2021**.
+Generally speaking, there are six steps required to query the raw dataset that is provided in this module. The data collected in this module is as of **April 12, 2021**.
 
 ## Annex I
 
@@ -14,7 +14,7 @@ The following [steps](https://di.unfccc.int/flex_annex1) are for each drop-down 
 
 ![](../../Figures/Flexible-Queries-Annex-I.png)
 
-1.  **Select Party**: 'Annex I'
+1.  **Select Party**: Click on the circle above 'Annex I'
 
 2.  **Select Year**: 'Select All'
 
@@ -24,9 +24,9 @@ The following [steps](https://di.unfccc.int/flex_annex1) are for each drop-down 
 
 5.  **Select Type of Value**: 'Net emissions/removals'
 
-6.  **Select Gas**: 'Aggregate GHGs,' 'CO<sub>2</sub>,' and 'CH<sub>4</sub>'
+6.  **Select Gas**: 'Aggregate GHGs' and 'CO<sub>2</sub>.' 
 
-Once the query is submitted and you see the table go to the 'Unit' tab and unselect 'kt,' which means all your GHG emissions values are in kt CO<sub>2</sub> equivalent.
+Once the query is submitted and you see the table go to the 'Unit' tab and unselect 'kt,' which means all your GHG emissions values are in kilotonnes or kt CO<sub>2</sub> equivalent.
 
 ## Non-Annex I
 
@@ -36,7 +36,7 @@ The Non-Annex I [steps](https://di.unfccc.int/flex_non_annex1) are similar to th
 
 -   **Select Category**: 'Total GHG emissions excluding LULUCF/LUCF' and 'Total GHG emissions including LULUCF/LUCF'
 
-Once the query is submitted and you see the table go to the 'Unit' tab and unselect 'Gg,' which means all your GHG emissions values are in Gg CO<sub>2</sub> equivalent.
+Once the query is submitted and you see the table go to the 'Unit' tab and unselect 'Gg,' which means all your GHG emissions values are in Gigagrams or Gg CO<sub>2</sub> equivalent.
 
 Please note that 1 kt = 1 Gg.
 
@@ -46,4 +46,7 @@ Please note that 1 kt = 1 Gg.
 | Variable      | Description     | Unit of measurement | Data type     | Notes        |
 | -----------   | -----------     | ------------------- | ------------- | ------------ |
 | `party`       | Territory name  | Not applicable      | Categorical   |              |
-| `type`        | Text        |
+| `type`        | Emissions that include or exclude Land Use, Land-Use Change and Forestry (LULUCF)| Not applicable | Categorical |      |
+| `year`        | Gregorian year  | Annual year         | Categorical   |              |
+| `ghg`         | Total GHG emissions | kt or Gg of CO<sub>2</sub> equivalent | Numerical | GHG include the following: <br /> 1. Carbon dioxide (CO<sub>2</sub>) <br /> 2. Methane (CH<sub>4</sub>) <br /> 3. Nitrous oxide (N<sub>2</sub>) <br /> 4. Hydrofluorocarbons (HFCs) <br /> 5. Perfluorocarbons (PFCs) <br /> 6. Sulphur Hexafluoride (SF<sub>6</sub>) |
+| `co2`         | Total CO<sub>2</sub> emissions | kt or Gg of CO<sub>2</sub> | Numerical | Only measures CO<sub>2</sub> emissions |
