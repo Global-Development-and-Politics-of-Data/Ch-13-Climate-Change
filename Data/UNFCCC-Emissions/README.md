@@ -55,6 +55,9 @@ Please note that 1 kt = 1 Gg.
 
 # Codebook
 
+The following codebook is for the clean dataset called `UNFCCC-Emissions.csv`.
+
+
 | Variable      | Description     | Unit of measurement | Data type     | Notes        |
 | -----------   | -----------     | ------------------- | ------------- | ------------ |
 | `party`       | Territory name  | Not applicable      | Categorical   |              |
