@@ -107,7 +107,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.0149341"
      inkscape:cx="285.52688"
-     inkscape:cy="200.24583"
+     inkscape:cy="176.92001"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -144,7 +144,7 @@
     <text
        xml:space="preserve"
        id="text892"
-       style="line-height:1.25;font-family:'CMU Sans Serif';font-size:4.2333298px;-inkscape-font-specification:'CMU Sans Serif, Medium';font-weight:500;white-space:pre;shape-inside:url(#rect894);fill:#ffffff;fill-opacity:1;" />
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect894);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;" />
     <rect
        style="opacity:0.998467;fill:#3f7e44;fill-opacity:1;stroke:#3f7e44;stroke-width:0.102371;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect898"
@@ -404,7 +404,7 @@
          d="m 137.48509,42.249115 c 0,0.426667 -3.7361,2.583705 -4.10561,2.370371 -0.3695,-0.213333 -0.3695,-4.527409 0,-4.740742 0.36951,-0.213334 4.10561,1.943704 4.10561,2.370371 z" />
     </g>
     <rect
-       style="opacity:0.998467;fill:#3f7e44;stroke:#3f7e44;stroke-width:0.508;stroke-dashoffset:3.072;fill-opacity:1;stroke-opacity:1"
+       style="opacity:0.998467;fill:#3f7e44;fill-opacity:1;stroke:#3f7e44;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833"
        width="41.647377"
        height="21.803627"
@@ -414,18 +414,18 @@
     <text
        xml:space="preserve"
        id="text1046"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect1048);fill:#ffffff;fill-opacity:1;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1048);fill:#ffffff;fill-opacity:1;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        x="17.97098"
        y="0"
        transform="translate(-0.19187673,4.4264978)"><tspan
-         x="22.777019"
-         y="10.284144"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Download data from </tspan></tspan><tspan
-         x="33.11333"
-         y="15.575806"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">repository</tspan></tspan></text>
+         x="23.221411"
+         y="10.306137"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Download data from </tspan></tspan><tspan
+         x="32.715696"
+         y="15.5978"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">repository</tspan></tspan></text>
     <rect
-       style="opacity:0.998467;fill:#3f7e44;stroke:#3f7e44;stroke-width:0.508;stroke-dashoffset:3.072;fill-opacity:1;stroke-opacity:1"
+       style="opacity:0.998467;fill:#3f7e44;fill-opacity:1;stroke:#3f7e44;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833-5"
        width="41.647377"
        height="21.803627"
@@ -435,21 +435,21 @@
     <text
        xml:space="preserve"
        id="text1052"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect1054);fill:#ffffff;fill-opacity:1;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1054);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        x="15.563895"
        y="0"
        transform="translate(59.658774,-34.098877)"><tspan
-         x="27.016828"
-         y="46.541956"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Create a new pre-</tspan></tspan><tspan
-         x="28.262229"
-         y="51.83362"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">formatted memo </tspan></tspan><tspan
-         x="34.873706"
-         y="57.125285"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">document</tspan></tspan></text>
+         x="27.695613"
+         y="46.56395"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Create a new pre-</tspan></tspan><tspan
+         x="28.480885"
+         y="51.855614"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">formatted memo </tspan></tspan><tspan
+         x="34.906004"
+         y="57.147278"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">document</tspan></tspan></text>
     <rect
-       style="opacity:0.99655031;fill:#3f7e44;stroke:#3f7e44;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1;fill-opacity:1"
+       style="opacity:0.99655;fill:#3f7e44;fill-opacity:1;stroke:#3f7e44;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833-7"
        width="41.647377"
        height="21.803627"
@@ -459,18 +459,18 @@
     <text
        xml:space="preserve"
        id="text1058"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';text-align:center;white-space:pre;shape-inside:url(#rect1060);fill:#ffffff;fill-opacity:1;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';text-align:center;white-space:pre;shape-inside:url(#rect1060);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        x="13.39452"
        y="0"
        transform="translate(121.31968,-65.172413)"><tspan
-         x="29.248963"
-         y="79.860316"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Install and load </tspan></tspan><tspan
-         x="35.460465"
-         y="85.15198"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">packages</tspan></tspan></text>
+         x="29.80385"
+         y="79.882309"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Install and load </tspan></tspan><tspan
+         x="35.355852"
+         y="85.173973"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">packages</tspan></tspan></text>
     <rect
-       style="opacity:0.998467;fill:#52a358;stroke:#52a358;stroke-width:0.508;stroke-dashoffset:3.072;fill-opacity:1;stroke-opacity:1"
+       style="opacity:0.998467;fill:#52a358;fill-opacity:1;stroke:#52a358;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833-4"
        width="41.647377"
        height="21.803627"
@@ -480,13 +480,13 @@
     <text
        xml:space="preserve"
        id="text1064"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect1066);fill:#ffffff;fill-opacity:1;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1066);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        transform="translate(128.8869,-46.852661)"><tspan
          x="21.802734"
-         y="108.32516"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold'">Import datasets</tspan></tspan></text>
+         y="108.34715"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Import datasets</tspan></tspan></text>
     <rect
-       style="opacity:0.998467;fill:#52a358;stroke:#52a358;stroke-width:0.508;stroke-dashoffset:3.072;fill-opacity:1;stroke-opacity:1"
+       style="opacity:0.998467;fill:#52a358;fill-opacity:1;stroke:#52a358;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833-3"
        width="41.647377"
        height="21.803627"
@@ -496,18 +496,18 @@
     <text
        xml:space="preserve"
        id="text1070"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect1072);fill:#ffffff;fill-opacity:1;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1072);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        x="16.054821"
        y="0"
        transform="translate(61.789221,-82.203897)"><tspan
-         x="24.990835"
-         y="141.0068"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Data cleaning and </tspan></tspan><tspan
-         x="33.375846"
-         y="146.29846"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">wrangling</tspan></tspan></text>
+         x="25.776219"
+         y="141.02879"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Data cleaning and </tspan></tspan><tspan
+         x="33.266022"
+         y="146.32045"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">wrangling</tspan></tspan></text>
     <rect
-       style="opacity:0.998467;fill:#52a358;stroke:#52a358;stroke-width:0.508;stroke-dashoffset:3.072;fill-opacity:1;stroke-opacity:1"
+       style="opacity:0.998467;fill:#52a358;fill-opacity:1;stroke:#52a358;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833-42"
        width="41.647377"
        height="21.803627"
@@ -517,17 +517,17 @@
     <text
        xml:space="preserve"
        id="text1076"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect1078);fill:#ffffff;fill-opacity:1;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1078);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        transform="translate(6.2343462,-112.23761)"><tspan
          x="21.802734"
-         y="173.68649"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold'">Merge datasets</tspan></tspan></text>
+         y="173.70848"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Merge datasets</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text1082"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect1084);fill:#ffffff;fill-opacity:1;" />
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1084);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;" />
     <rect
-       style="opacity:0.998467;fill:#64c76c;stroke:#61c769;stroke-width:0.508;stroke-dashoffset:3.072;fill-opacity:1;stroke-opacity:1"
+       style="opacity:0.998467;fill:#64c76c;fill-opacity:1;stroke:#61c769;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833-71"
        width="41.647377"
        height="21.803627"
@@ -537,18 +537,18 @@
     <text
        xml:space="preserve"
        id="text1088"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';text-align:center;white-space:pre;shape-inside:url(#rect1090);fill:#ffffff;fill-opacity:1;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';text-align:center;white-space:pre;shape-inside:url(#rect1090);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        x="14.538635"
        y="0"
        transform="translate(0.29809527,-103.03177)"><tspan
-         x="26.650681"
-         y="206.36618"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Exploratory data </tspan></tspan><tspan
-         x="28.183402"
-         y="211.65783"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">analysis (EDA)</tspan></tspan></text>
+         x="26.689567"
+         y="206.38817"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Exploratory data </tspan></tspan><tspan
+         x="29.159707"
+         y="211.67983"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">analysis (EDA)</tspan></tspan></text>
     <rect
-       style="opacity:0.998467;fill:#64c76c;stroke:#61c769;stroke-width:0.508;stroke-dashoffset:3.072;fill-opacity:1;stroke-opacity:1"
+       style="opacity:0.998467;fill:#64c76c;fill-opacity:1;stroke:#61c769;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833-32"
        width="41.647377"
        height="21.803627"
@@ -558,13 +558,13 @@
     <text
        xml:space="preserve"
        id="text1094"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect1096);fill:#ffffff;fill-opacity:1;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1096);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        transform="translate(62.933002,-132.58695)"><tspan
          x="21.802734"
-         y="239.04782"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold'">Create visualizations</tspan></tspan></text>
+         y="239.06981"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Create visualizations</tspan></tspan></text>
     <rect
-       style="opacity:0.998467;fill:#64c76c;stroke:#61c769;stroke-width:0.508;stroke-dashoffset:3.072;fill-opacity:1;stroke-opacity:1"
+       style="opacity:0.998467;fill:#64c76c;fill-opacity:1;stroke:#61c769;stroke-width:0.508;stroke-dashoffset:3.072;stroke-opacity:1"
        id="rect833-9"
        width="41.647377"
        height="21.803627"
@@ -574,10 +574,10 @@
     <text
        xml:space="preserve"
        id="text1100"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect1102);fill:#ffffff;fill-opacity:1;"
+       style="font-weight:bold;font-size:4.2333298px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1102);fill:#ffffff;fill-opacity:1;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"
        transform="translate(129.54526,-165.63043)"><tspan
          x="21.802734"
-         y="271.7275"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Bold'">Produce report</tspan></tspan></text>
+         y="271.7495"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Produce report</tspan></tspan></text>
   </g>
 </svg>

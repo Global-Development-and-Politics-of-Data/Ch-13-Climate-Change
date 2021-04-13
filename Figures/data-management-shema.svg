@@ -91,38 +91,40 @@
     <text
        xml:space="preserve"
        id="text2771"
-       style="font-weight:500;font-size:7.76111px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect2773);"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2773);"
        transform="translate(-18.119646,-4.6211178)"><tspan
          x="87.376953"
-         y="42.241964"><tspan
-           style="shape-inside:url(#rect2773)">Data Management Plan</tspan></tspan></text>
+         y="39.253824"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;shape-inside:url(#rect2773)">Data Management Plan</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2777"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect2779);"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2779);"
        transform="translate(-1.2160836,41.225235)"><tspan
          x="57.96875"
-         y="61.317347"><tspan>Hierchical structure of </tspan></tspan><tspan
+         y="61.591715"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Hierchical structure of </tspan></tspan><tspan
          x="57.96875"
-         y="66.609011"><tspan>Github repository:</tspan></tspan></text>
+         y="67.22259"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Github repository:</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
-       x="101.64762"
-       y="104.48756"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+       x="101.52602"
+       y="85.395042"
        id="text2785"><tspan
          sodipodi:role="line"
          id="tspan2783"
-         x="101.64762"
-         y="104.48756"
-         style="stroke-width:0.264583">File renaming rules</tspan></text>
+         x="101.52602"
+         y="85.395042"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">File renaming rules</tspan></text>
     <g
        id="g944"
        inkscape:export-xdpi="600"
        inkscape:export-ydpi="600">
       <text
          xml:space="preserve"
-         style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          x="57.844727"
          y="116.48603"
          id="text2793"><tspan
@@ -130,10 +132,10 @@
            id="tspan2791"
            x="57.844727"
            y="116.48603"
-           style="stroke-width:0.264583">Raw Data</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">Raw Data</tspan></text>
       <text
          xml:space="preserve"
-         style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          x="66.45195"
          y="125.83456"
          id="text2809"><tspan
@@ -141,39 +143,39 @@
            id="tspan2807"
            x="66.45195"
            y="125.83456"
-           style="stroke-width:0.264583">Source 1</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">Source 1</tspan><tspan
            sodipodi:role="line"
            x="66.45195"
-           y="131.12622"
-           style="stroke-width:0.264583"
+           y="131.46544"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
            id="tspan2811" /><tspan
            sodipodi:role="line"
            x="66.45195"
-           y="136.41789"
-           style="stroke-width:0.264583"
+           y="137.09631"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
            id="tspan2813">Source 2</tspan><tspan
            sodipodi:role="line"
            x="66.45195"
-           y="141.70955"
-           style="stroke-width:0.264583"
+           y="142.72719"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
            id="tspan2815" /><tspan
            sodipodi:role="line"
            x="66.45195"
-           y="147.00121"
-           style="stroke-width:0.264583"
+           y="148.35806"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
            id="tspan2817">Source n</tspan></text>
       <text
          xml:space="preserve"
-         style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
-         x="138.9034"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="139.43256"
          y="-73.950195"
          id="text2821-0"
          transform="rotate(90)"><tspan
            sodipodi:role="line"
            id="tspan2819-7"
-           x="138.9034"
+           x="139.43256"
            y="-73.950195"
-           style="stroke-width:0.264583">…</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">…</tspan></text>
       <g
          id="g2894-8"
          transform="translate(0,38.850348)">
@@ -223,7 +225,7 @@
           </g>
           <text
              xml:space="preserve"
-             style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
              x="57.824055"
              y="77.480148"
              id="text2789"><tspan
@@ -231,10 +233,10 @@
                id="tspan2787"
                x="57.824055"
                y="77.480148"
-               style="stroke-width:0.264583">Manuscript</tspan></text>
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">Manuscript</tspan></text>
           <text
              xml:space="preserve"
-             style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
              x="66.45195"
              y="87.076729"
              id="text2797"><tspan
@@ -242,82 +244,104 @@
                id="tspan2795"
                x="66.45195"
                y="87.076729"
-               style="stroke-width:0.264583">Section 1</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">Section 1</tspan><tspan
                sodipodi:role="line"
                x="66.45195"
-               y="92.368393"
-               style="stroke-width:0.264583"
+               y="92.707603"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
                id="tspan2799" /><tspan
                sodipodi:role="line"
                x="66.45195"
-               y="97.660049"
-               style="stroke-width:0.264583"
+               y="98.338478"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
                id="tspan2801">Section 2</tspan><tspan
                sodipodi:role="line"
                x="66.45195"
-               y="102.95171"
-               style="stroke-width:0.264583"
+               y="103.96935"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
                id="tspan2803" /><tspan
                sodipodi:role="line"
                x="66.45195"
-               y="108.24338"
-               style="stroke-width:0.264583"
+               y="109.60023"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
                id="tspan2805">Section n</tspan></text>
         </g>
         <text
            xml:space="preserve"
-           style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';stroke-width:0.264583"
-           x="99.665176"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+           x="100.19434"
            y="-74.495895"
            id="text2821"
            transform="rotate(90)"><tspan
              sodipodi:role="line"
              id="tspan2819"
-             x="99.665176"
+             x="100.19434"
              y="-74.495895"
-             style="stroke-width:0.264583">…</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">…</tspan></text>
       </g>
       <text
          xml:space="preserve"
          id="text2960"
-         style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect2962);"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2962);"
          transform="translate(6.7109505)"><tspan
            x="136.44531"
-           y="103.26852"><tspan>Directory structure of </tspan></tspan><tspan
+           y="103.54289"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Directory structure </tspan></tspan><tspan
            x="136.44531"
-           y="108.56018"><tspan>manuscript (files):</tspan></tspan></text>
+           y="109.17376"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">of </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">manuscript (files):</tspan></tspan></text>
     </g>
     <text
        xml:space="preserve"
        id="text2989"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect2991);"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2991);"
        transform="translate(-21.576467,-6.2588373)"><tspan
          x="32.833984"
-         y="64.233363"><tspan>Download raw files in </tspan></tspan><tspan
+         y="64.507731"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Download raw files </tspan></tspan><tspan
          x="32.833984"
-         y="69.525027"><tspan>Github repo:
+         y="70.138605"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">in </tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Github repo:
 </tspan></tspan><tspan
          x="32.833984"
-         y="74.816691"><tspan>'Raw-Data' &gt; </tspan><tspan>'Source'</tspan></tspan></text>
+         y="75.76948"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">'Raw-Data' &gt; </tspan></tspan><tspan
+         x="32.833984"
+         y="81.400354"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">'Source'</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2995"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect2997);"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2997);"
        transform="translate(0,-0.78618105)"><tspan
          x="68.587891"
-         y="58.760706"><tspan>Rename files as the </tspan></tspan><tspan
+         y="59.035074"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Rename files as the </tspan></tspan><tspan
          x="68.587891"
-         y="64.05237"><tspan>following:
+         y="64.665949"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">following:
 </tspan></tspan><tspan
          x="68.587891"
-         y="69.344035"><tspan>'</tspan><tspan>DateDownloaded-Source-</tspan></tspan><tspan
+         y="70.296824"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">'</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">DateDownloaded-</tspan></tspan><tspan
+         style="visibility:hidden"
          x="68.587891"
-         y="74.635699"><tspan>Vari</tspan><tspan>able/VariableGroup'</tspan></tspan></text>
+         y="79.829996"><tspan
+           dx="0 2.3874855 2.504612 2.5046124 1.8153939 2.1036901 2.3604555"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Source-</tspan><tspan
+           dx="1.5631227 2.8019142 2.2838821 1.8153934"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Vari</tspan><tspan
+           dx="1.1531963 2.2838821 2.5181198 1.1531963 2.3604565 1.6802483 2.8019142 2.2838821 1.8153915 1.1531963 2.2838802 2.5181179 1.1531963 2.3604546 3.3064461 1.8153954 2.504612 2.504612 2.2793617"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">able/VariableGroup'</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text923"
-       style="font-weight:500;font-size:4.23333px;line-height:1.25;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect925);"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect925);"><tspan
          x="120.75781"
-         y="59.002894"><tspan>Include each data file</tspan></tspan></text>
+         y="59.277262"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.5047px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Include each data file</tspan></tspan></text>
   </g>
 </svg>
