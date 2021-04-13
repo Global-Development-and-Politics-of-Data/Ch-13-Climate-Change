@@ -8,7 +8,7 @@ output:
   html_document:
     df_print: paged
   pdf_document: default
-bibliography: ../Bibliography/Climate-Change.bib # This is our Zotero's collection and it continuously syncs as we add sources
+bibliography: ../Bibliography/Climate-Change.bib # This is our Zotero's collection and it continuously syncs as we add sources in our Zotero folders
 suppress-bibliography: true # since we're using full citations in the endnotes, I'm suppressing the printing of the bibliography for now.
 csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl ### This is the citation style, if we ever want to switch it to short notes, or even apa, we just switch the file name.
 ---
@@ -19,7 +19,7 @@ To create a heading in Rmarkdown you use the \# character.
 
 ## Heading level 2
 
-Increasing heading levels just means adding another \# character. Make sure you add a space after the hash and the first word of your heading's title.
+Increasing heading levels just means adding another \# character. Make sure you add a space between the hash and the first word of your heading's title.
 
 ```{r}
 # Any coding goes in here
@@ -51,7 +51,7 @@ Restart the R session by going to "Session \> Restart R"
 
 If you click on "Addins" it will load a new window with a list of all the citations in the file called "Climate-Change.bib." This package provides an autocomplete capability to your list of references.
 
-If writing in pure rmarkdown is not for you, RStudio has a new feature called visual mode (latest version of RStudio). If you click on cog icon next to "Knit," you will find an option called use visual editor. This will format your Rmarkdown in real time just like in a word document or google docs. To exit this view just uncheck the option.
+Alternatively, if writing in pure R markdown is not for you, RStudio has a new feature called visual mode (latest version of RStudio). If you click on cog icon next to "Knit," you will find an option called use visual editor; it's also the last icon on the same line. This will format your Rmarkdown in real time just like in a word document or google docs. To exit this view just uncheck the option.
 
 
 [More Rmarkdown authoring basics](https://rmarkdown.rstudio.com/authoring_basics.html)
