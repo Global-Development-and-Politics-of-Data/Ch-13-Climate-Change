@@ -4,6 +4,18 @@ We've collected data on country emissions from the United Nations Framework Conv
 
 Details on how to use the interface and query specific data can be found [here](https://unfccc.int/process-and-meetings/transparency-and-reporting/greenhouse-gas-data/data-interface-help#eq-7). The website also provides higher-level information on major variables, and we will go in detail below on the types of variables we will focus on for this module.
 
+# Directory Contents
+
+| File Name                                          |  Content                        |
+|----------------------------------------------------|---------------------------------|
+| Annual-Net-emissions-removals-Annex-I-raw.xlsx     | Raw data of GHG and CO<sub>2</sub> inventories by Annex I party members and Land Use, Land-Use Change and Forestry (LULUCF) inclusion criteria from each member's base year to 2018.|
+| Annual-Net-emissions-removals-Non-Annex-I-raw.xlsx | Raw data of GHG and CO<sub>2</sub> inventories by Non-Annex I party members and Land Use, Land-Use Change and Forestry (LULUCF) inclusion criteria from 1990 to 2018.|
+| UNFCCC-Emissions-clean.csv                         | Final UNFCCC GHG inventories dataset in long format|
+| UNFCCC-Emissions-clean.R                           | R script to produce final UNFCCC GHG inventories dataset|
+| UNFCCC-Emissions.docx                              | Word document tutorial on data cleaning and wrangling UNFCCC raw dataset|
+| UNFCCC-Emissions.Rmd                               | R markdown tutorial on data cleaning and wrangling UNFCCC raw dataset|
+
+
 # GHG Emissions
 
 Generally speaking, there are six steps required to query the raw dataset that is provided in this module. The data collected in this module is as of **April 12, 2021**.
@@ -41,7 +53,7 @@ Once the query is submitted and you see the table go to the 'Unit' tab and unsel
 Please note that 1 kt = 1 Gg.
 
 
-## Codebook
+# Codebook
 
 | Variable      | Description     | Unit of measurement | Data type     | Notes        |
 | -----------   | -----------     | ------------------- | ------------- | ------------ |
