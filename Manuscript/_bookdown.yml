@@ -1,4 +1,0 @@
-book_filename: "Climate-Change"
-delete_merged_file: false
-rmd_files: ["index.Rmd"]
-output_dir: "output"

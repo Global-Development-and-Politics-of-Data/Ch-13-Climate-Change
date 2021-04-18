@@ -1,7 +1,0 @@
----
-bibliography: ../Bibliography/Climate-Change.bib
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl
----
-
-# Conclusion
-

@@ -1,6 +1,0 @@
-# Dataset description from Data folder
-
-
-| BP-Statistical-Review        | 2020 BP Statistical Review of World Energy.<br /> Includes datasets ,both in long and wide formats, and approximate conversion factors |  [Datasets](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/downloads.html) <br /> [Definitions and explanatory notes](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/using-the-review/definitions-and-explanatory-notes.html#accordion_Conversion%20factors) <br /> [Methodology](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy/using-the-review/methodology.html) |
-| EM-DAT                       | Dataset on worldwide natural and technological disasters from 1900 to 2021 | [Dataset](https://public.emdat.be/) <br /> [Guidlines](https://public.emdat.be/about) <br /> [Explanatory notes](https://www.emdat.be/explanatory-notes)|
-| Global Carbon Project        | 2020 global carbon budget and national carbon emissions | [Datasets](https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2020) <br /> [Methodology](https://essd.copernicus.org/articles/12/3269/2020/) <br /> [Primary sources](https://www.globalcarbonproject.org/carbonbudget/20/data.htm) |
