@@ -17,9 +17,7 @@ Starting alphabetically:
 
 1. **Analysis**:
 
-2. **Archive**:
-
-3. **Bibliography**:
+2. **Bibliography**:
 
 4. **Data**:
 
@@ -27,12 +25,6 @@ Starting alphabetically:
 
 6. **Figures**:
 
-7. **Fonts**:
-
-8. **Manuscript**:
-
 9. **Module**:
-
-10. **Peer Feedback**:
 
 11. **Templates**:
