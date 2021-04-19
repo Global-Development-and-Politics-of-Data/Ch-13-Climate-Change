@@ -26,7 +26,7 @@ Increasing heading levels just means adding another \# character. Make sure you 
 
 ```
 
-![Image title](imagefile.png)
+![Image title](rstudio.png)
 
 [link text](http://www.google.com)
 

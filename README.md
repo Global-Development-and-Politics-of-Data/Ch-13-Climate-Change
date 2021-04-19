@@ -15,16 +15,15 @@ The repository is organized such that each part of the project workflow has its 
 
 Starting alphabetically:
 
-1. **Analysis**:
 
-2. **Bibliography**:
+1. **bibliography**:
 
-4. **Data**:
+2. **data**:
 
-5. **Demo**:
+3. **demo**:
 
-6. **Figures**:
+4. **problem-set**:
 
-9. **Module**:
+4. **scripts**:
 
-11. **Templates**:
+5. **templates**:

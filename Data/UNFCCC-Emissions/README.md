@@ -8,8 +8,8 @@ Details on how to use the interface and query specific data can be found [here](
 
 | File Name                                          |  Content                        |
 |----------------------------------------------------|---------------------------------|
-| Annual-Net-emissions-removals-Annex-I-raw.xlsx     | Raw data of GHG and CO<sub>2</sub> inventories by Annex I party members and Land Use, Land-Use Change and Forestry (LULUCF) inclusion criteria from each member's base year to 2018.|
-| Annual-Net-emissions-removals-Non-Annex-I-raw.xlsx | Raw data of GHG and CO<sub>2</sub> inventories by Non-Annex I party members and Land Use, Land-Use Change and Forestry (LULUCF) inclusion criteria from 1990 to 2018.|
+| annual-net-emissions-removals-annex-i-raw.xlsx     | Raw data of GHG and CO<sub>2</sub> inventories by Annex I party members and Land Use, Land-Use Change and Forestry (LULUCF) inclusion criteria from each member's base year to 2018.|
+| annual-net-emissions-removals-non-annex-i-raw.xlsx | Raw data of GHG and CO<sub>2</sub> inventories by Non-Annex I party members and Land Use, Land-Use Change and Forestry (LULUCF) inclusion criteria from 1990 to 2018.|
 | UNFCCC-Emissions-clean.csv                         | Final UNFCCC GHG inventories dataset in long format|
 | UNFCCC-Emissions-clean.R                           | R script to produce final UNFCCC GHG inventories dataset|
 | UNFCCC-Emissions.docx                              | Word document tutorial on data cleaning and wrangling UNFCCC raw dataset|
@@ -55,7 +55,7 @@ Please note that 1 kt = 1 Gg.
 
 # Codebook
 
-The following codebook is for the clean dataset called `UNFCCC-Emissions.csv`.
+The following codebook is for the clean dataset called `unfccc-emissions-clean.csv`.
 
 
 | Variable      | Description     | Unit of measurement | Data type     | Notes        |
