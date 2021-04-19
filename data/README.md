@@ -21,7 +21,7 @@ Generally speaking, there are six steps required to query the raw dataset that i
 
 The following [steps](https://di.unfccc.int/flex_annex1) are for each drop-down menu as shown in the figure below.
 
-![](../../Figures/Flexible-Queries-Annex-I.png)
+![](../../images/Flexible-Queries-Annex-I.png)
 
 1.  **Select Party**: Click on the circle above 'Annex I'
 
