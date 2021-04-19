@@ -6,7 +6,7 @@
 
 ## Project workflow
 
-![](Figures/workflow-schema.png)
+![](images/workflow-schema.png)
 
 
 ## Repository Structure
