@@ -2,9 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+*.svg
 /archive/
 /manuscript/
 /peer-feedback/
 /fonts/
-/figures/
 /module/
