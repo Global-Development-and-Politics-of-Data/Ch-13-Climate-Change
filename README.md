@@ -14,6 +14,7 @@ The repository is organized such that each part of the data workflow has its own
 
 
 ├───bibliography
+
 ├───data
 
 ├───demo
