@@ -14,13 +14,11 @@ output:
 ---
 
 
-# Section 1
+# Summary
 
 
-## Subsection 1.1
+
+# Analysis
 
 
-# Section 2
-
-
-## Subsection 2.1
+# Recommendations

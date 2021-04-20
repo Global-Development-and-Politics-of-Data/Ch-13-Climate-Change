@@ -31,10 +31,10 @@ The repository is organized such that each part of the data workflow has its own
    - 📄 `TODO` [README.md](problem-set/README.md)
    - 📄 [memo.Rmd](problem-set/memo.Rmd)
 - 📂 __scripts__
-   - 📄 [README.md](scripts/README.md)
+   - 📄 `TODO` [README.md](scripts/README.md)
    - 📂 __analysis__
-      - 📄 [README.md](scripts/analysis/README.md)
-      - 📄 [unfccc\-emissions\-analysis.Rmd](scripts/analysis/unfccc-emissions-analysis.Rmd)
+      - 📄 `TODO` [README.md](scripts/analysis/README.md)
+      - 📄 `TODO` [unfccc\-emissions\-analysis.Rmd](scripts/analysis/unfccc-emissions-analysis.Rmd)
       - 📄 [unfccc\-emissions\-analysis.docx](scripts/analysis/unfccc-emissions-analysis.docx)
       - 📄 [unfccc\-emissions\-clean.csv](scripts/analysis/unfccc-emissions-clean.csv)
    - 📂 __cleaning__
@@ -44,8 +44,8 @@ The repository is organized such that each part of the data workflow has its own
       - 📄 [unfccc\-emissions\-clean.csv](scripts/cleaning/unfccc-emissions-clean.csv)
       - 📄 [unfccc\-emissions\-clean.docx](scripts/cleaning/unfccc-emissions-clean.docx)
    - 📂 __visualization__
-      - 📄 [README.md](scripts/visualization/README.md)
-      - 📄 [unfccc\-emissions\-visualizations.Rmd](scripts/visualization/unfccc-emissions-visualizations.Rmd)
+      - 📄 `TODO` [README.md](scripts/visualization/README.md)
+      - 📄 `TODO` [unfccc\-emissions\-visualizations.Rmd](scripts/visualization/unfccc-emissions-visualizations.Rmd)
       - 📄 [unfccc\-emissions\-visualizations.docx](scripts/visualization/unfccc-emissions-visualizations.docx)
 - 📂 __templates__
    - 📄 [README.md](templates/README.md)
