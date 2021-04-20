@@ -1,0 +1,32 @@
+---
+title: Data Visualizations
+#author:
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  word_document:
+    reference_docx: ../../templates/template.docx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, 
+                      warning = FALSE,
+                      purl = TRUE,
+                      out.extra = '',
+                      knitr.duplicate.label = "allow",
+                      tidy.opts=list(width.cutoff=50), 
+                      tidy=TRUE)
+
+```
+
+# Install and load libraries
+
+We need to first install all the required packages for the data analysis process. If you have never used the packages below, it is more likely that you have not installed them on your machine either. Please make sure you install each of the packages below using the following command:
+
+```{r eval=FALSE, warning=FALSE, message=FALSE}
+install.packages("janitor")
+install.packages("tidyverse")
+install.packages("knitr")
+install.packages("ggplot2")
+install.packages("sf")
+install.packages("ggmaps")
+```

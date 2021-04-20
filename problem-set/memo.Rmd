@@ -2,7 +2,7 @@
 title: Memorandum
 output:
   word_document:
-    reference_docx: ../../Templates/memo_template.docx
+    reference_docx: ../../templates/memo_template.docx
 ---
 
 |**To:** |  Name of, Supervisor's position|

@@ -4,13 +4,13 @@ author: "Author Name"     ### I removed all the author lines in other files beca
 date: "`r format(Sys.time(), '%d %B, %Y')`" ### This updates the date everytime we export the document into Word
 output:
   word_document:
-    reference_docx: ../Templates/template.docx ## We will be exporting our work in word format and I've created a template for how it looks
+    reference_docx: ../templates/template.docx ## We will be exporting our work in word format and I've created a template for how it looks
   html_document:
     df_print: paged
   pdf_document: default
-bibliography: ../Bibliography/Climate-Change.bib # This is our Zotero's collection and it continuously syncs as we add sources in our Zotero folders
+bibliography: ../bibliography/climate-change.bib # This is our Zotero's collection and it continuously syncs as we add sources in our Zotero folders
 suppress-bibliography: true # since we're using full citations in the endnotes, I'm suppressing the printing of the bibliography for now.
-csl: ../Bibliography/chicago-fullnote-bibliography-with-ibid.csl ### This is the citation style, if we ever want to switch it to short notes, or even apa, we just switch the file name.
+csl: ../bibliography/chicago-fullnote-bibliography-with-ibid.csl ### This is the citation style, if we ever want to switch it to short notes, or even apa, we just switch the file name.
 ---
 
 # Heading level 1

@@ -1,0 +1,53 @@
+---
+title: Data Analysis
+#author:
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  word_document:
+    reference_docx: ../../templates/template.docx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, 
+                      warning = FALSE,
+                      purl = TRUE,
+                      out.extra = '',
+                      knitr.duplicate.label = "allow",
+                      tidy.opts=list(width.cutoff=50), 
+                      tidy=TRUE)
+
+```
+
+# Install and load libraries
+
+We need to first install all the required packages for the data analysis process. If you have never used the packages below, it is more likely that you have not installed them on your machine either. Please make sure you install each of the packages below using the following command:
+
+```{r eval=FALSE, warning=FALSE, message=FALSE}
+install.packages("janitor")
+install.packages("tidyverse")
+install.packages("knitr")
+```
+
+Then you need to load the following packages:
+
+```{r load libraries, warning=FALSE, message=FALSE}
+library(janitor)
+library(tidyverse)
+library(knitr)
+```
+
+There are two ways you can import the clean dataset into this file:
+
+1. By running the R script from `clean` folder
+
+```{r run script for clean dataset, warning=FALSE, message=FALSE}
+source("../cleaning/unfccc-emissions-clean.R")
+```
+
+This will also produce some of the temporary files.
+
+2. By importing the clean dataset
+
+```{r import dataset, warning=FALSE, message=FALSE}
+unfccc_emissions <- read.csv(here("scripts/cleaning", "unfccc-emissions-clean.csv"))
+```

@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 
 ## ----eval=FALSE, warning=FALSE, message=FALSE--------------------------------------------------------------------------------------------------------------------------------------------------------------
+## install.packages("here")
 ## install.packages("openxlsx")
 ## install.packages("janitor")
 ## install.packages("tidyverse")
@@ -19,6 +20,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 
 ## ----load libraries, warning=FALSE, message=FALSE----------------------------------------------------------------------------------------------------------------------------------------------------------
+library(here)
 library(openxlsx)
 library(janitor)
 library(tidyverse)
@@ -28,7 +30,7 @@ library(knitr)
 
 
 ## ----import data (Annex I)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-annex_i_emissions <- openxlsx::read.xlsx("../../data/annual-net-emissions-removals-annex-i-raw.xlsx",
+annex_i_emissions <- openxlsx::read.xlsx(here("data", "annual-net-emissions-removals-annex-i-raw.xlsx"),
                                          startRow = 5, 
                                          fillMergedCells = TRUE, 
                                          rows = 5:96) %>% 
@@ -36,7 +38,7 @@ annex_i_emissions <- openxlsx::read.xlsx("../../data/annual-net-emissions-remova
 
 
 ## ----import data (Non-Annex I)-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-non_annex_i_emissions <- openxlsx::read.xlsx("../../data/annual-net-emissions-removals-non-annex-i-raw.xlsx",
+non_annex_i_emissions <- openxlsx::read.xlsx(here("data", "annual-net-emissions-removals-non-annex-i-raw.xlsx"),
                                              startRow = 5, 
                                              fillMergedCells = TRUE, 
                                              rows = 5:96) %>% 
@@ -133,16 +135,14 @@ unfccc_emissions <- dplyr::bind_rows(annex_i_emissions,non_annex_i_emissions) %>
 ## ----Merge region dataframe with unfccc_emissions datafram, message=FALSE, warning=FALSE-------------------------------------------------------------------------------------------------------------------
 region <- countrycode::codelist %>% select(country.name.en, un.region.name) %>% mutate(country.name.en = stringr::str_replace_all(country.name.en, c("Antigua & Barbuda" = "Antigua and Barbuda", "Bosnia & Herzegovina" = "Bosnia and Herzegovina", "Cape Verde" = "Cabo Verde", "Congo - Kinshasa" = "Congo", "Côte d’Ivoire" = "Cote d'Ivoire", "Congo - Brazzaville" = "Democratic Republic of Congo", "North Korea" = "Democratic People's Republic of Korea")))
 
-unfccc_emissions_test <- unfccc_emissions %>% fuzzyjoin::regex_left_join(region, by= c(party = "country.name.en")) %>% dplyr::rename(region = un.region.name) %>% select(-country.name.en)
-unfccc_emissions_test$region[unfccc_emissions_test$party %in% c("European Union (Convention)", "European Union (KP)")] <- "Europe"
-
-regions_na <- unfccc_emissions_test %>% dplyr::filter(is.na(un.region.name))
+unfccc_emissions <- unfccc_emissions %>% fuzzyjoin::regex_left_join(region, by= c(party = "country.name.en")) %>% dplyr::rename(region = un.region.name) %>% select(-country.name.en)
+unfccc_emissions$region[unfccc_emissions$party %in% c("European Union (Convention)", "European Union (KP)")] <- "Europe"
 
 
 ## ----export as a csv file----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-write.csv(UNFCCC_Emissions, "unfccc-emissions-clean.csv")
+write.csv(unfccc_emissions, "unfccc-emissions-clean.csv")
 
 
 ## ----export as an R script, eval=FALSE, message=FALSE, warning=FALSE---------------------------------------------------------------------------------------------------------------------------------------
-## knitr::purl("unfccc-emissions.Rmd", "unfccc-emissions-clean.R")
+## knitr::purl("unfccc-emissions-clean.Rmd", "unfccc-emissions-clean.R")
 
