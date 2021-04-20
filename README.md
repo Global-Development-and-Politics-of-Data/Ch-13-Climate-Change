@@ -12,25 +12,39 @@ The next section will ask to create several visualizations that look at how emis
 
 The repository is organized such that each part of the data workflow has its own subdirectory.
 
-
-├───bibliography
-├───data
-
-├───demo
-
-├───images
-
-├───problem-set
-
-├───scripts
-
-│   ├───analysis
-
-│   ├───cleaning
-
-│   └───visualization
-
-└───templates
+   - 📂 __bibliography__
+     - 📄 [README.md](bibliography/README.md)
+     - 📄 [chicago\-fullnote\-bibliography\-with\-ibid.csl](bibliography/chicago-fullnote-bibliography-with-ibid.csl)
+     - 📄 [climate\-change.bib](bibliography/climate-change.bib)
+   - 📄 [climate\-change.Rproj](climate-change.Rproj)
+   - 📂 __data__
+     - 📄 [README.md](data/README.md)
+     - 📄 [annual\-net\-emissions\-removals\-annex\-i\-raw.xlsx](data/annual-net-emissions-removals-annex-i-raw.xlsx)
+     - 📄 [annual\-net\-emissions\-removals\-non\-annex\-i\-raw.xlsx](data/annual-net-emissions-removals-non-annex-i-raw.xlsx)
+   - 📂 __demo__
+     - 📄 [README.md](demo/README.md)
+     - 📄 [demo\-rmd\-file.Rmd](demo/demo-rmd-file.Rmd)
+     - 📄 [rstudio.png](demo/rstudio.png)
+   - 📂 __images__
+   - 📂 __problem\-set__
+     - 📄 [README.md](problem-set/README.md)
+     - 📄 [memo.Rmd](problem-set/memo.Rmd)
+   - 📂 __scripts__
+     - 📄 [README.md](scripts/README.md)
+     - 📂 __analysis__
+       - 📄 [README.md](scripts/analysis/README.md)
+     - 📂 __cleaning__
+       - 📄 [README.md](scripts/cleaning/README.md)
+       - 📄 [unfccc\-emissions\-clean.R](scripts/cleaning/unfccc-emissions-clean.R)
+       - 📄 [unfccc\-emissions\-clean.Rmd](scripts/cleaning/unfccc-emissions-clean.Rmd)
+       - 📄 [unfccc\-emissions\-clean.csv](scripts/cleaning/unfccc-emissions-clean.csv)
+       - 📄 [unfccc\-emissions\-clean.docx](scripts/cleaning/unfccc-emissions-clean.docx)
+     - 📂 __visualization__
+       - 📄 [README.md](scripts/visualization/README.md)
+   - 📂 __templates__
+     - 📄 [README.md](templates/README.md)
+     - 📄 [memo\_template.docx](templates/memo_template.docx)
+     - 📄 [template.docx](templates/template.docx)
 
 
 ## Data workflow
