@@ -39,6 +39,8 @@ library(knitr)
 library(here)
 library(DataExplorer)
 library(SmartEDA)
+library(data.table)
+library(summarytools)
 ```
 
 # Import clean dataset
@@ -66,9 +68,9 @@ So if you are using R, then you are lucky to have at your finger tips a plethora
 
 Things that you can accomplish during this stage:
 
-- Describe the distribution of 
+- Describe the level of missing data
 
 ```{r describe dataset, warning=FALSE, message=FALSE}
-DataExplorer::plot_missing(unfccc_emissions, missing_only = TRUE, ggtheme = ggplot2::theme_classic(), theme_config = ggplot2::theme(legend.position = "none"))
+DataExplorer::plot_missing(unfccc_emissions, missing_only = TRUE, ggtheme = ggplot2::theme_classic(), theme_config = ggplot2::theme(legend.position = "none"), geom_label_args = list(size = 6, label.padding = unit(0.25, "lines"), hjust = 0.5))
 ```
 
