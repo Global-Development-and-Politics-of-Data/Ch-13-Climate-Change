@@ -1,6 +1,6 @@
 # Summary
 
-This section includes all the steps in the data management process, where we use the raw data from the ![`data`](https://github.com/Global-Development-and-Politics-of-Data/Climate-Change/tree/main/data) folder to produce a clean dataset ready for analysis. The process includes the following steps:
+This section includes all the steps in the data management process, where we use the raw data from the [`data`](https://github.com/Global-Development-and-Politics-of-Data/Climate-Change/tree/main/data) folder to produce a clean dataset ready for analysis. The process includes the following steps:
 
 1. Import raw datasets
 2. Rename variables for consistency[[1]](#1)
@@ -38,4 +38,4 @@ The following codebook is for the clean dataset called `unfccc-emissions-clean.c
 # References
 
 <a id = "1">[1]</a>
-Karl W. Broman and Kara H. Woo, “Data Organization in Spreadsheets,” The American Statistician 72, no. 1 (January 2, 2018): 2–10, ![](https://doi.org/10.1080/00031305.2017.1375989).
+Karl W. Broman and Kara H. Woo, “Data Organization in Spreadsheets,” The American Statistician 72, no. 1 (January 2, 2018): 2–10, [](https://doi.org/10.1080/00031305.2017.1375989).
