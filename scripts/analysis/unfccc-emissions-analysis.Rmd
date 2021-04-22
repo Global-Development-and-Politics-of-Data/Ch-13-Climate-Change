@@ -26,6 +26,8 @@ We need to first install all the required packages for the data analysis process
 install.packages("janitor")
 install.packages("tidyverse")
 install.packages("knitr")
+install.packages("DataExplorer")
+install.packages("SmartEDA")
 ```
 
 Then you need to load the following packages:
@@ -35,7 +37,11 @@ library(janitor)
 library(tidyverse)
 library(knitr)
 library(here)
+library(DataExplorer)
+library(SmartEDA)
 ```
+
+# Import clean dataset
 
 There are two ways you can import the clean dataset into this file:
 
@@ -52,3 +58,17 @@ This will also produce some of the temporary files.
 ```{r import dataset, warning=FALSE, message=FALSE}
 unfccc_emissions <- read.csv(here("scripts/cleaning", "unfccc-emissions-clean.csv"))
 ```
+
+
+# Describe dataset
+
+So if you are using R, then you are lucky to have at your finger tips a plethora of packages that help you visualize the structure of the dataset, and what it would mean for your data analysis.
+
+Things that you can accomplish during this stage:
+
+- Describe the distribution of 
+
+```{r describe dataset, warning=FALSE, message=FALSE}
+DataExplorer::plot_missing(unfccc_emissions, missing_only = TRUE, ggtheme = ggplot2::theme_classic(), theme_config = ggplot2::theme(legend.position = "none"))
+```
+
