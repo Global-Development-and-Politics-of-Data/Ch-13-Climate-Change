@@ -1,10 +1,18 @@
 ---
-title: Data Importing and Wrangling
-#author:
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+# title: "Data Importing and Wrangling"
+# date: "`r format(Sys.time(), '%B %d, %Y')`"
+fontsize: 12pt
 output:
+  pdf_document: 
+    keep_tex: true
+    highlight: pygments
+    includes:
+      in_header: "latex-header.tex"
   word_document:
     reference_docx: ../../templates/template.docx
+bibliography: packages.bib
+nocite: '@*'
+csl: ../../bibliography/chicago-fullnote-bibliography-with-ibid.csl
 ---
 
 ```{r setup, include=FALSE}
@@ -13,8 +21,9 @@ knitr::opts_chunk$set(echo = TRUE,
                       purl = TRUE,
                       out.extra = '',
                       knitr.duplicate.label = "allow",
-                      tidy.opts=list(width.cutoff=50), 
-                      tidy=TRUE)
+                      tidy.opts = list(width.cutoff = 40), 
+                      tidy = TRUE,
+                      strip.white = FALSE)
 
 ```
 
@@ -45,20 +54,22 @@ library(knitr)
 ```
 
 
-- `openxlsx`: a package that reads excel files and imports them into R. There are other packages that do the same thing, such as `readxl`, but we've chosen this package because it does a better job at dealing with merged cells within excel sheets.
+- `here`: a package that reads path directories efficiently. It's best to use when sharing scripts or loading them in other files.
 
-- `tidyverse`: a suite of R packages that deal with data management and general wrangling. In this document we will be using mostly `dplyr`, `tidyr`, and `stringr`.
+- `openxlsx`: a package that reads excel files and imports them into R. There are other packages that do the same thing, such as `readxl`, but we've chosen this package because it does a better job at dealing with merged cells within excel sheets.
 
 - `janitor`: a package that cleans and renames variable or columns names into something more consistent and coherent.
 
-- `knitr`: a package that works with R markdown and exports documents into different formats such as Word, PDF, or HTML. In the case of this document we use `knitr` to convert all the code chunks here into a full-length R script.
+- `tidyverse`: a suite of R packages that deal with data management and general wrangling. In this document we will be using mostly `dplyr`, `tidyr`, and `stringr`.
 
 - `countrycode`: a package that has dataset of country names with their associated legal geographic information such as the U.N. System region names and continent names. We will use this package to merge a `region` column to our final clean dataset.
 
 - `fuzzyjoin`: a package to merge cells when string names are not fully matched, i.e. fuzzy.
 
+- `knitr`: a package that works with R markdown and exports documents into different formats such as Word, PDF, or HTML. In the case of this document we use `knitr` to convert all the code chunks here into a full-length R script.
 
-# Data Import and Wrangling
+
+# Data import and wrangling
 
 This section is the bulk of the data cleaning process.
 
@@ -68,7 +79,7 @@ This section is the bulk of the data cleaning process.
 ### Annex I parties
 
 ```{r import data (Annex I)}
-annex_i_emissions <- openxlsx::read.xlsx(here("data", "annual-net-emissions-removals-annex-i-raw.xlsx"),
+annex_i_emissions <- openxlsx::read.xlsx(here::here("data", "annual-net-emissions-removals-annex-i-raw.xlsx"),
                                          startRow = 5, 
                                          fillMergedCells = TRUE, 
                                          rows = 5:96) %>% 
@@ -88,10 +99,10 @@ We then use `janitor` to clean the variable names by converting all the names to
 ### Non-Annex I parties
 
 ```{r import data (Non-Annex I)}
-non_annex_i_emissions <- openxlsx::read.xlsx(here("data", "annual-net-emissions-removals-non-annex-i-raw.xlsx"),
+non_annex_i_emissions <- openxlsx::read.xlsx(here::here("data", "annual-net-emissions-removals-non-annex-i-raw.xlsx"),
                                              startRow = 5, 
                                              fillMergedCells = TRUE, 
-                                             rows = 5:96) %>% 
+                                             rows = 5:302) %>% 
   janitor::clean_names()
 ```
 
@@ -104,7 +115,7 @@ Now we need to do some further cleaning and renaming of the dataset because not 
 ```{r clean main dataframe (Annex I), warning=FALSE, message=FALSE}
 annex_i_emissions <- annex_i_emissions[-c(1),]
 
-colnames(annex_i_emissions)[1] <- "party"
+colnames(annex_i_emissions)[1] <- "country"
 
 annex_i_emissions <- annex_i_emissions %>% 
   dplyr::rename_all(funs(stringr::str_replace_all(., "aggregate_gh_gs", "ghg")))
@@ -115,7 +126,7 @@ annex_i_emissions <- annex_i_emissions %>%
 ```{r clean main dataframe (Non-Annex I), warning=FALSE, message=FALSE}
 non_annex_i_emissions <- non_annex_i_emissions[-c(1),]
 
-colnames(non_annex_i_emissions)[1] <- "party"
+colnames(non_annex_i_emissions)[1] <- "country"
 
 non_annex_i_emissions <- non_annex_i_emissions %>% 
   dplyr::rename_all(funs(stringr::str_replace_all(., "aggregate_gh_gs", "ghg")))
@@ -132,13 +143,13 @@ Another issue we had is that years were not imported into R in the correct way. 
 
 ```{r disaggregate dataframe by gas type (Annex I)}
 annex_i_emissions_co2 <- annex_i_emissions %>% 
-  dplyr::select("party", "gas", contains("co2")) %>% 
+  dplyr::select("country", "gas", contains("co2")) %>% 
   dplyr::rename("base_year" = "co2")
 
 colnames(annex_i_emissions_co2)[4:32] <- 1990:2018
 
 annex_i_emissions_ghg <- annex_i_emissions %>% 
-  dplyr::select("party", "gas", contains("ghg")) %>% 
+  dplyr::select("country", "gas", contains("ghg")) %>% 
   dplyr::rename("base_year" = "ghg")
 
 colnames(annex_i_emissions_ghg)[4:32] <- 1990:2018
@@ -149,12 +160,12 @@ colnames(annex_i_emissions_ghg)[4:32] <- 1990:2018
 
 ```{r disaggregate dataframe by gas type (Non-Annex I)}
 non_annex_i_emissions_co2 <- non_annex_i_emissions %>% 
-  dplyr::select("party", "gas", contains("co2"))
+  dplyr::select("country", "gas", contains("co2"))
 
 colnames(non_annex_i_emissions_co2)[3:31] <- 1990:2018
 
 non_annex_i_emissions_ghg <- non_annex_i_emissions %>% 
-  dplyr::select("party", "gas", contains("ghg"))
+  dplyr::select("country", "gas", contains("ghg"))
 
 colnames(non_annex_i_emissions_ghg)[3:31] <- 1990:2018
 ```
@@ -196,7 +207,7 @@ We merge the long datasets back by columns so we can have one column for total G
 
 ```{r merge datasets back (Annex I)}
 annex_i_emissions <- annex_i_emissions_ghg %>% 
-  dplyr::full_join(annex_i_emissions_co2, by =c("party", "gas", "year", "group"))
+  dplyr::full_join(annex_i_emissions_co2, by =c("country", "gas", "year", "group"))
 
 rm(annex_i_emissions_co2,annex_i_emissions_ghg)
 ```
@@ -205,7 +216,7 @@ rm(annex_i_emissions_co2,annex_i_emissions_ghg)
 
 ```{r merge datasets back (Non-Annex I)}
 non_annex_i_emissions <- non_annex_i_emissions_ghg %>% 
-  dplyr::full_join(non_annex_i_emissions_co2, by =c("party", "gas", "year", "group"))
+  dplyr::full_join(non_annex_i_emissions_co2, by =c("country", "gas", "year", "group"))
 
 rm(non_annex_i_emissions_co2,non_annex_i_emissions_ghg)
 ```
@@ -218,30 +229,69 @@ Next we will merge Annex I and Non-Annex I by rows, and rename the values for `g
 ```{r Merge Annex I and Non-Annex I dataframes, message=FALSE, warning=FALSE}
 unfccc_emissions <- dplyr::bind_rows(annex_i_emissions,non_annex_i_emissions) %>%
   dplyr::rename("type" = "gas") %>% 
-  dplyr::mutate(type = stringr::str_replace(type,"Total GHG emissions excluding LULUCF/LUCF", "Total GHG emissions without LULUCF")) %>% 
-  dplyr::mutate(type = stringr::str_replace(type,"Total GHG emissions including LULUCF/LUCF", "Total GHG emissions with LULUCF")) %>%
+  dplyr::mutate(type = stringr::str_replace(type, 
+                                            "Total GHG emissions excluding LULUCF/LUCF", 
+                                            "Total GHG emissions without LULUCF")) %>% 
+  dplyr::mutate(type = stringr::str_replace(type, 
+                                            "Total GHG emissions including LULUCF/LUCF", 
+                                            "Total GHG emissions with LULUCF")) %>%
   readr::type_convert() %>%
   dplyr::mutate_if(is.character, as.factor)
 ```
 
 ## Merge Region data
 
-No we will merge region dataset using the `countrycode` so we can analyze data deprivations by region.
+Now we will merge region dataset using the `countrycode` so we can analyze data deprivations by region.
 
-```{r Merge region dataframe with unfccc_emissions datafram, message=FALSE, warning=FALSE}
-region <- countrycode::codelist %>% select(country.name.en, un.region.name) %>% mutate(country.name.en = stringr::str_replace_all(country.name.en, c("Antigua & Barbuda" = "Antigua and Barbuda", "Bosnia & Herzegovina" = "Bosnia and Herzegovina", "Cape Verde" = "Cabo Verde", "Congo - Kinshasa" = "Congo", "Côte d’Ivoire" = "Cote d'Ivoire", "Congo - Brazzaville" = "Democratic Republic of Congo", "North Korea" = "Democratic People's Republic of Korea")))
+```{r Merge region dataframe with unfccc_emissions dataframe, message=FALSE, warning=FALSE}
+region <- countrycode::codelist %>% 
+  dplyr::select(country.name.en, region, iso3c) %>% 
+  dplyr::mutate(country.name.en = stringr::str_replace_all(country.name.en, 
+                                                    c("Antigua & Barbuda" = "Antigua and Barbuda", 
+                                                      "Bosnia & Herzegovina" = "Bosnia and Herzegovina", 
+                                                      "Cape Verde" = "Cabo Verde", 
+                                                      "Congo - Kinshasa" = "Congo", 
+                                                      "Côte d’Ivoire" = "Cote d'Ivoire", 
+                                                      "Congo - Brazzaville" = "Democratic Republic of Congo",
+                                                      "Laos" = "Lao People's Democratic Republic",
+                                                      "Micronesia \\(Federated States of\\)" = "Micronesia",
+                                                      "Myanmar \\(Burma\\)" = "Myanmar",
+                                                      "St. Lucia" = "Saint Lucia",
+                                                      "St. Vincent & Grenadines" = "Saint Vincent and the Grenadines",
+                                                      "São Tomé & Príncipe" = "Sao Tome and Principe",
+                                                      "Palestinian Territories" = "State of Palestine",
+                                                      "Trinidad & Tobago" = "Trinidad and Tobago",
+                                                      "North Korea" = "Democratic People's Republic of Korea",
+                                                      "South Korea" = "Republic of Korea",
+                                                      "St. Kitts & Nevis" = "Saint Kitts and Nevis",
+                                                      "Vietnam" = "Viet Nam")))
 
-unfccc_emissions <- unfccc_emissions %>% fuzzyjoin::regex_left_join(region, by= c(party = "country.name.en")) %>% dplyr::rename(region = un.region.name) %>% select(-country.name.en)
-unfccc_emissions$region[unfccc_emissions$party %in% c("European Union (Convention)", "European Union (KP)")] <- "Europe"
+unfccc_emissions <- unfccc_emissions %>% 
+  fuzzyjoin::regex_left_join(region, by = c(country = "country.name.en")) %>%
+  dplyr::rename(iso = iso3c) %>% 
+  dplyr::filter(!(country == "United Kingdom of Great Britain and Northern Ireland" & iso == "IRL"),
+                !(country == "Guinea-Bissau" & iso == "GIN"),
+                !(country == "Papua New Guinea" & iso == "GIN"),
+                !(country == "Democratic People's Republic of Korea" & iso == "KOR"),
+                !(country == "Dominican Republic" & iso == "DMA"),
+                !(country == "Nigeria" & iso == "NER"),
+                !(country == "South Sudan" & iso == "SDN")) %>%
+  dplyr::select(-country.name.en) %>%
+  dplyr::relocate(iso, .before = country) %>%
+  dplyr::relocate(c(region, group, year), .after = country)
+  
+
+unfccc_emissions$region[unfccc_emissions$country %in% c("European Union (Convention)", "European Union (KP)")] <- "Europe & Central Asia"
 ```
 
+Over here we needed to conduct some string manipulation because the official UNFCCC dataset does not provide ISO codes, which would have made it easier to merge the two datasets. Therefore, we needed to rename some of the countries so we can easily join the two datasets by country name.
 
 ## Export as a CSV file
 
 Now we will export our clean dataset as an CSV file so we can conduct our analyses in the Analysis folder.
 
 ```{r export as a csv file}
-write.csv(unfccc_emissions, "unfccc-emissions-clean.csv")
+utils::write.csv(unfccc_emissions, "unfccc-emissions-clean.csv", row.names = FALSE)
 ```
 
 ## Export as an R script for future use
@@ -251,4 +301,7 @@ Only run this chunk manually once within the .Rmd file. It produces an error whe
 
 ```{r export as an R script, eval=FALSE, message=FALSE, warning=FALSE}
 knitr::purl("unfccc-emissions-clean.Rmd", "unfccc-emissions-clean.R")
+knitr::write_bib(.packages(), "packages.bib")
 ```
+# Software used
+

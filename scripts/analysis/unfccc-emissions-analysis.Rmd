@@ -1,10 +1,13 @@
 ---
-title: Data Analysis
-#author:
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+# title: Data Analysis
+# date: "`r format(Sys.time(), '%B %d, %Y')`"
+fontsize: 12pt
 output:
   word_document:
     reference_docx: ../../templates/template.docx
+bibliography: packages.bib
+nocite: '@*'
+csl: ../../bibliography/chicago-fullnote-bibliography-with-ibid.csl
 ---
 
 ```{r setup, include=FALSE}
@@ -12,9 +15,11 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE,
                       purl = TRUE,
                       out.extra = '',
+                      tab.cap.pre = "Table ", tab.cap.sep = ": ",
                       knitr.duplicate.label = "allow",
-                      tidy.opts=list(width.cutoff=50), 
-                      tidy=TRUE)
+                      tidy.opts = list(width.cutoff = 40), 
+                      tidy = TRUE,
+                      strip.white = FALSE)
 
 ```
 
@@ -23,24 +28,27 @@ knitr::opts_chunk$set(echo = TRUE,
 We need to first install all the required packages for the data analysis process. If you have never used the packages below, it is more likely that you have not installed them on your machine either. Please make sure you install each of the packages below using the following command:
 
 ```{r eval=FALSE, warning=FALSE, message=FALSE}
-install.packages("janitor")
+install.packages("here")
 install.packages("tidyverse")
+install.packages("janitor")
 install.packages("knitr")
-install.packages("DataExplorer")
-install.packages("SmartEDA")
+install.packages("flextable")
+install.packages("officer")
+install.packages("extrafont")
+# font_import() # Only do this once
 ```
 
 Then you need to load the following packages:
 
 ```{r load libraries, warning=FALSE, message=FALSE}
-library(janitor)
-library(tidyverse)
-library(knitr)
 library(here)
-library(DataExplorer)
-library(SmartEDA)
-library(data.table)
-library(summarytools)
+library(tidyverse)
+library(janitor)
+library(knitr)
+library(flextable)
+library(officer)
+library(extrafont)
+loadfonts(device = "win")
 ```
 
 # Import clean dataset
@@ -61,16 +69,114 @@ This will also produce some of the temporary files.
 unfccc_emissions <- read.csv(here("scripts/cleaning", "unfccc-emissions-clean.csv"))
 ```
 
+It is better to load the cleaned dataset, because running the source script breaks down when it's dealing with scripts. For example, the conversion of the script "Côte d’Ivoire" to "Cote d'Ivoire" for column-matching purposes does not translate properly when the script is run in the background. However, works well when it is done within the session and exported as a CSV sheet. Therefore, we recommend option 2 for the purpose of this exercise.
 
-# Describe dataset
+# Data exploration
 
-So if you are using R, then you are lucky to have at your finger tips a plethora of packages that help you visualize the structure of the dataset, and what it would mean for your data analysis.
+We need to check for all the missing values, especially for Non-Annex I parties' GHG inventories because they are voluntary submissions. First, we will check the degree of missing values for Annex I and Non-Annex I countries, starting with Non-Annex I countries.
 
-Things that you can accomplish during this stage:
+```{r check NAs CO2 non-annex, warning=FALSE, message=FALSE, caption = "Percent of missing values of CO~2~ over time (Non-Annex I)"}
+table_00 <- unfccc_emissions %>% 
+  dplyr::ungroup() %>% 
+  dplyr::filter(group == "Non-Annex I") %>% 
+  dplyr::group_by(year) %>% 
+  dplyr::summarise(missing = round(sum(is.na(co2))/length(co2) * 100, digits = 2)) %>%
+  add_row(year = "2019", missing = NA)
 
-- Describe the level of missing data
+table_01 <- cbind(table_00[table_00$year < 2000, ], table_00[table_00$year >= 2000 & table_00$year < 2010, ], table_00[table_00$year >= 2010 & table_00$year <= 2019, ]) %>%
+  repair_names()
 
-```{r describe dataset, warning=FALSE, message=FALSE}
-DataExplorer::plot_missing(unfccc_emissions, missing_only = TRUE, ggtheme = ggplot2::theme_classic(), theme_config = ggplot2::theme(legend.position = "none"), geom_label_args = list(size = 6, label.padding = unit(0.25, "lines"), hjust = 0.5))
+autonum <- run_autonum(seq_id = "tab", bkm = "TC1", bkm_all = TRUE)
+
+table_01 %>%
+  flextable::flextable() %>%
+  set_header_labels(year = "Year", missing = "Missing (%)", year1 = "Year", missing1 = "Missing (%)", year2 = "Year", missing2 = "Missing (%)") %>%
+  theme_vanilla() %>%
+  font(fontname = "Times New Roman", part = "all") %>%
+  set_caption("Percent of missing values of CO~2~ over time (Non-Annex I)", autonum = autonum) %>%
+  highlight(j = "missing", i = ~ missing < 50, color = "yellow") %>%
+  highlight(j = "missing1", i = ~ missing1 < 50, color = "yellow") %>%
+  highlight(j = "missing2", i = ~ missing2 < 50, color = "yellow") %>%
+  highlight(j = "missing", i = ~ missing > 90, color = "lightcoral") %>%
+  highlight(j = "missing1", i = ~ missing1 > 90, color = "lightcoral") %>%
+  highlight(j = "missing2", i = ~ missing2 > 90, color = "lightcoral") %>%
+  autofit()
 ```
+
+As we can see the data deprivations are quite stark when it comes to reporting data on GHG and CO~2~ emissions for most developing countries. There are only two years where data reporting exceeds 50% of the official members: 1994, and 2000.
+
+
+```{r check NAs CO2 annex, warning=FALSE, message=FALSE, caption = "Percent of missing values of CO~2~ over time (Annex I)"}
+table_00 <- unfccc_emissions %>% 
+  dplyr::ungroup() %>% 
+  dplyr::filter(group == "Annex I") %>% 
+  dplyr::group_by(year) %>% 
+  dplyr::summarise(missing = round(sum(is.na(co2))/length(co2) * 100, digits = 2)) %>%
+  add_row(year = "2019", missing = NA)
+
+table_01 <- cbind(table_00[table_00$year < 2000, ], table_00[table_00$year >= 2000 & table_00$year < 2010, ], table_00[table_00$year >= 2010 & table_00$year <= 2019, ]) %>%
+  repair_names()
+
+
+table_01 %>%
+  flextable::flextable() %>%
+  set_header_labels(year = "Year", missing = "Missing (%)", year1 = "Year", missing1 = "Missing (%)", year2 = "Year", missing2 = "Missing (%)") %>%
+  font(fontname = "Times New Roman", part = "all") %>%
+  set_caption("Percent of missing values of CO~2~ over time (Annex I)", autonum = autonum) %>%
+  theme_vanilla() %>%
+  autofit()
+```
+
+
+The story is not the same for Annex I countries because reporting GHG and CO~2~ emission inventories is mandatory within the UNFCCC.
+
+Next, we should check how data deprivations vary by region within the Non-Annex I countries, that way we can determine which region to focus on for increasing data capacity.
+
+First we need to aggregate the data by region, and we will split them by three time periods: 1990-1999, 2000-2009, and 2010-2018.
+
+```{r check NAs CO2 by region non-annex, warning=FALSE, message=FALSE}
+missing_non_annex_i_region <- unfccc_emissions %>% 
+  dplyr::ungroup() %>% 
+  dplyr::filter(group == "Non-Annex I") %>%
+  dplyr::mutate(time_period = floor(as.numeric(as.character(year))/10)*10) %>%
+  dplyr::group_by(time_period, region) %>%
+  dplyr::summarise(missing = sum(is.na(co2))/length(co2) * 100) %>%
+  dplyr::mutate(time_period = as.factor(time_period))
+  
+missing_non_annex_i_region$time_period <- dplyr::recode_factor(missing_non_annex_i_region$time_period, `1990` = "1990-1999", `2000` = "2000-2009", `2010` = "2010-2018")
+```
+
+
+```{r barplot by decade Non-Annex I, warning=FALSE, message=FALSE, caption = "Percent of missing values of CO~2~ by region (Non-Annex I)", fig.width = 8}
+missing_non_annex_i_region %>%
+  ggplot2::ggplot(aes(x = time_period, y = missing, fill = str_wrap(region, 15))) +
+  ggplot2::geom_bar(stat="identity", position=position_dodge(), color = "black") +
+  ggplot2::theme_classic() +
+  ggplot2::ylab("Missing Values (%)") +
+  ggplot2::xlab("Years") +
+  ggplot2::coord_flip() +
+  ggplot2::scale_fill_brewer(palette = "Paired", name = "Regions") +
+  ggplot2::geom_text(aes(label = round(missing, digits = 0)), position=position_dodge(width=0.9), hjust = -0.25, size = 4) +
+  ggplot2::theme(text=element_text(family = "Arial", size = 11), 
+                 axis.title.x = element_text(family = "Arial", size = 12), 
+                 axis.title.y = element_text(family = "Arial", size = 12), 
+                 legend.text=element_text(family = "Arial", size=11))
+
+ggsave(here("images", "missing-non-annex-i-01.svg"), device="svg", dpi=300)  
+```
+
+We can see that many Non-Annex I party submit their GHG inventories the least which makes it difficult to aggregate their cumulative emissions, with the highest levels of missing values located in Africa and Oceania. We will use data from the Global Carbon Project to calculate cumulative CO~2~ based on their estimates.
+
+## Export as an R script for future use
+
+Only run this chunk manually once within the .Rmd file. It produces an error when knitting it as a whole because of chunk label duplicates. As of `r format(Sys.time(), '%B %d, %Y')`, there hasn't been a viable solution to run the code below when as part of the knitting process.
+
+```{r export as an R script, eval=FALSE, message=FALSE, warning=FALSE}
+knitr::purl("unfccc-emissions-analysis.Rmd", "unfccc-emissions-analysis.R")
+knitr::write_bib(.packages(), "packages.bib")
+```
+
+# Software used
+
+
 
