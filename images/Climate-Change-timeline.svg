@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0.0 0.0 960.0 540.0"
+   fill="none"
+   stroke="none"
+   stroke-linecap="square"
+   stroke-miterlimit="10"
+   id="svg157"
+   sodipodi:docname="Climate-Change-timeline.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:export-filename="C:\Users\Noorah\Dropbox\Climate-Change\Figures\Climate-Change-timeline.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
+  <metadata
+     id="metadata163">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs161">
+    <rect
+       x="793.07804"
+       y="333.04094"
+       width="124.4044"
+       height="99.350735"
+       id="rect1077" />
+    <rect
+       x="811.65231"
+       y="337.36054"
+       width="133.90751"
+       height="79.480588"
+       id="rect1071" />
+    <rect
+       x="778.39141"
+       y="317.92235"
+       width="48.811448"
+       height="21.597986"
+       id="rect1065" />
+    <rect
+       x="664.78601"
+       y="109.71777"
+       width="86.391944"
+       height="101.51053"
+       id="rect1056" />
+    <rect
+       x="651.39526"
+       y="211.2283"
+       width="63.066119"
+       height="20.302107"
+       id="rect1050" />
+    <rect
+       x="539.08573"
+       y="173.64781"
+       width="103.23837"
+       height="28.509341"
+       id="rect1044" />
+    <rect
+       x="565.43527"
+       y="328.28939"
+       width="38.876375"
+       height="21.597986"
+       id="rect1038" />
+    <rect
+       x="431.0958"
+       y="182.287"
+       width="65.657877"
+       height="34.124818"
+       id="rect1032" />
+    <rect
+       x="444.05459"
+       y="372.34928"
+       width="97.622896"
+       height="46.219691"
+       id="rect1026" />
+    <rect
+       x="450.10203"
+       y="110.58169"
+       width="92.43938"
+       height="53.994965"
+       id="rect1020" />
+    <rect
+       x="315.76255"
+       y="324.83371"
+       width="41.900093"
+       height="24.621704"
+       id="rect1014" />
+    <rect
+       x="204.31695"
+       y="359.82245"
+       width="96.327017"
+       height="37.148535"
+       id="rect1008" />
+    <rect
+       x="203.02107"
+       y="208.20458"
+       width="60.0424"
+       height="22.461906"
+       id="rect1002" />
+    <rect
+       x="219.43554"
+       y="113.17345"
+       width="108.85385"
+       height="93.303299"
+       id="rect996" />
+    <rect
+       x="66.521797"
+       y="325.26567"
+       width="63.498079"
+       height="44.923811"
+       id="rect990" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1017"
+     id="namedview159"
+     showgrid="false"
+     inkscape:zoom="1.3249068"
+     inkscape:cx="688.48754"
+     inkscape:cy="199.01462"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g155"
+     inkscape:document-rotation="0" />
+  <clipPath
+     id="p.0">
+    <path
+       d="m0 0l960.0 0l0 540.0l-960.0 0l0 -540.0z"
+       clip-rule="nonzero"
+       id="path2" />
+  </clipPath>
+  <g
+     clip-path="url(#p.0)"
+     id="g155">
+    <path
+       fill="#0e9453"
+       d="m 91.23609,267.5092 h 115.68504 v 14.01575 H 91.23609 Z"
+       fill-rule="evenodd"
+       id="path7" />
+    <path
+       fill="#000000"
+       d="m 86.00214,243.02516 v 0 c 0,-2.6788 2.171593,-4.8504 4.850395,-4.8504 v 0 c 1.2864,0 2.520119,0.51103 3.429749,1.42065 0.909622,0.90962 1.420646,2.14334 1.420646,3.42975 v 0 c 0,2.6788 -2.1716,4.85039 -4.850395,4.85039 v 0 c -2.678802,0 -4.850395,-2.17159 -4.850395,-4.85039 z"
+       fill-rule="evenodd"
+       id="path23" />
+    <path
+       fill="#000000"
+       fill-opacity="0"
+       d="m 90.85253,243.67871 v 37.7323"
+       fill-rule="evenodd"
+       id="path25" />
+    <path
+       stroke="#000000"
+       stroke-width="1"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="m 90.85253,243.67871 v 37.7323"
+       fill-rule="evenodd"
+       id="path27" />
+    <path
+       fill="#085631"
+       d="m 207.18222,267.5092 h 116.15747 v 14.01575 H 207.18222 Z"
+       fill-rule="evenodd"
+       id="path29" />
+    <path
+       fill="#000000"
+       fill-opacity="0"
+       d="M 207.65279,305.24066 V 267.50839"
+       fill-rule="evenodd"
+       id="path41" />
+    <path
+       stroke="#000000"
+       stroke-width="1"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="M 207.65279,305.24066 V 267.50839"
+       fill-rule="evenodd"
+       id="path43" />
+    <path
+       fill="#000000"
+       d="m 212.50319,305.89423 v 0 c 0,2.6788 -2.1716,4.8504 -4.8504,4.8504 v 0 c -1.2864,0 -2.52011,-0.51104 -3.42974,-1.42065 -0.90963,-0.90964 -1.42065,-2.14334 -1.42065,-3.42975 v 0 c 0,-2.6788 2.1716,-4.8504 4.85039,-4.8504 v 0 c 2.6788,0 4.8504,2.1716 4.8504,4.8504 z"
+       fill-rule="evenodd"
+       id="path45" />
+    <path
+       fill="#0e9453"
+       d="m 322.84268,267.5092 h 116.15747 v 14.01575 H 322.84268 Z"
+       fill-rule="evenodd"
+       id="path47" />
+    <path
+       fill="#000000"
+       d="m 317.60947,243.02516 v 0 c 0,-2.6788 2.17157,-4.8504 4.85037,-4.8504 v 0 c 1.28641,0 2.52014,0.51103 3.42975,1.42065 0.90964,0.90962 1.42066,2.14334 1.42066,3.42975 v 0 c 0,2.6788 -2.17161,4.85039 -4.85041,4.85039 v 0 c -2.6788,0 -4.85037,-2.17159 -4.85037,-4.85039 z"
+       fill-rule="evenodd"
+       id="path61" />
+    <path
+       fill="#000000"
+       fill-opacity="0"
+       d="m 322.45984,243.67871 v 37.7323"
+       fill-rule="evenodd"
+       id="path63" />
+    <path
+       stroke="#000000"
+       stroke-width="1"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="m 322.45984,243.67871 v 37.7323"
+       fill-rule="evenodd"
+       id="path65" />
+    <path
+       fill="#085631"
+       d="m 439.34775,267.51038 h 116.15073 v 14.01575 H 439.34775 Z"
+       fill-rule="evenodd"
+       id="path67" />
+    <path
+       fill="#000000"
+       fill-opacity="0"
+       d="M 439.64487,305.24185 V 267.50958"
+       fill-rule="evenodd"
+       id="path69" />
+    <path
+       stroke="#000000"
+       stroke-width="1"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="M 439.64487,305.24185 V 267.50958"
+       fill-rule="evenodd"
+       id="path71" />
+    <path
+       fill="#000000"
+       d="m 443.9457,305.89542 v 0 c 0,2.6788 -1.92554,4.85037 -4.30084,4.85037 v 0 c -1.14066,0 -2.23459,-0.51101 -3.04114,-1.42062 -0.80658,-0.90964 -1.2597,-2.14334 -1.2597,-3.42975 v 0 c 0,-2.6788 1.92556,-4.8504 4.30084,-4.8504 v 0 c 2.3753,0 4.30084,2.1716 4.30084,4.8504 z"
+       fill-rule="evenodd"
+       id="path73" />
+    <path
+       fill="#0e9453"
+       d="m 555.0986,267.50916 h 116.15747 v 14.01575 H 555.0986 Z"
+       fill-rule="evenodd"
+       id="path87" />
+    <path
+       fill="#000000"
+       fill-opacity="0"
+       d="m 555.3577,243.67867 v 37.73228"
+       fill-rule="evenodd"
+       id="path89" />
+    <path
+       stroke="#000000"
+       stroke-width="1"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="m 555.3577,243.67867 v 37.73228"
+       fill-rule="evenodd"
+       id="path91" />
+    <path
+       fill="#000000"
+       d="m 550.5073,243.02512 v 0 c 0,-2.6788 2.17163,-4.85039 4.8504,-4.85039 v 0 c 1.28644,0 2.52014,0.51102 3.42975,1.42064 0.90961,0.90962 1.42066,2.14334 1.42066,3.42975 v 0 c 0,2.6788 -2.17157,4.85039 -4.85041,4.85039 v 0 c -2.67877,0 -4.8504,-2.17159 -4.8504,-4.85039 z"
+       fill-rule="evenodd"
+       id="path93" />
+    <path
+       fill="#085631"
+       d="m 671.0898,267.5092 h 116.15747 v 14.01575 H 671.0898 Z"
+       fill-rule="evenodd"
+       id="path103" />
+    <path
+       fill="#000000"
+       fill-opacity="0"
+       d="M 671.5711,305.24066 V 267.50839"
+       fill-rule="evenodd"
+       id="path105" />
+    <path
+       stroke="#000000"
+       stroke-width="1"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="M 671.5711,305.24066 V 267.50839"
+       fill-rule="evenodd"
+       id="path107" />
+    <path
+       fill="#000000"
+       d="m 676.4215,305.89423 v 0 c 0,2.6788 -2.17163,4.8504 -4.8504,4.8504 v 0 c -1.28644,0 -2.52014,-0.51104 -3.42975,-1.42065 -0.90967,-0.90964 -1.42066,-2.14334 -1.42066,-3.42975 v 0 c 0,-2.6788 2.17157,-4.8504 4.85041,-4.8504 v 0 c 2.67877,0 4.8504,2.1716 4.8504,4.8504 z"
+       fill-rule="evenodd"
+       id="path109" />
+    <path
+       fill="#000000"
+       fill-opacity="0"
+       d="m 787.66925,243.67867 v 37.73228"
+       fill-rule="evenodd"
+       id="path127" />
+    <path
+       stroke="#000000"
+       stroke-width="1"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="m 787.66925,243.67867 v 37.73228"
+       fill-rule="evenodd"
+       id="path129" />
+    <path
+       fill="#000000"
+       d="m 782.81885,243.02512 v 0 c 0,-2.6788 2.17163,-4.85039 4.8504,-4.85039 v 0 c 1.28644,0 2.52014,0.51102 3.42975,1.42064 0.90967,0.90962 1.42066,2.14334 1.42066,3.42975 v 0 c 0,2.6788 -2.17157,4.85039 -4.85041,4.85039 v 0 c -2.67877,0 -4.8504,-2.17159 -4.8504,-4.85039 z"
+       fill-rule="evenodd"
+       id="path131" />
+    <text
+       xml:space="preserve"
+       id="text988"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:roboto;-inkscape-font-specification:roboto;white-space:pre;shape-inside:url(#rect990);fill:#000000;fill-opacity:1;"
+       transform="translate(5.4470475,-33.719655)"><tspan
+         x="66.521484"
+         y="340.14562"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Lato;-inkscape-font-specification:'Lato Bold';fill:#000000;fill-opacity:1">1972</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text994"
+       style="font-weight:500;font-size:16px;line-height:0.85;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';white-space:pre;shape-inside:url(#rect996);"
+       transform="translate(-133.64141,65.024072)"><tspan
+         x="219.43555"
+         y="124.7707"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">UNEP established at </tspan></tspan><tspan
+         x="219.43555"
+         y="138.3707"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">the Stockholm </tspan></tspan><tspan
+         x="219.43555"
+         y="151.9707"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Conference on the </tspan></tspan><tspan
+         x="219.43555"
+         y="165.57071"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Human Environment</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1000"
+       style="font-weight:bold;font-size:16px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1002);"
+       transform="translate(-14.276693,29.291034)"><tspan
+         x="203.02148"
+         y="223.08508"><tspan
+           style="fill:#000000;fill-opacity:1">1988</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1006"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1008);fill:#000000;fill-opacity:1;"
+       transform="translate(-2.202009,-45.395219)"><tspan
+         x="204.31641"
+         y="369.7423"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">IPCC established by </tspan></tspan><tspan
+         x="204.31641"
+         y="383.07567"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">UNEP and WMO</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1012"
+       style="font-weight:bold;font-size:16px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1014);fill:#000000;fill-opacity:1;"
+       transform="translate(-12.321877,-33.352014)"><tspan
+         x="315.76172"
+         y="339.71398"><tspan
+           style="fill:#000000;fill-opacity:1">1990</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1018"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1020);fill:#000000;fill-opacity:1;"
+       transform="translate(-132.52409,81.816317)"><tspan
+         x="450.10156"
+         y="120.50206"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">First IPCC </tspan></tspan><tspan
+         x="450.10156"
+         y="133.83544"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Assessment </tspan></tspan><tspan
+         x="450.10156"
+         y="147.16881"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Reports published</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1024"
+       style="font-weight:bold;font-size:16px;line-height:0.85;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1026);"
+       transform="translate(-8.9346728,-59.729436)"><tspan
+         x="444.05469"
+         y="384.02961"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">UNFCCC opened for </tspan></tspan><tspan
+         x="444.05469"
+         y="397.62962"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">signatures at the </tspan></tspan><tspan
+         x="444.05469"
+         y="411.22962"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Earth Summit in Rio</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1030"
+       style="font-weight:bold;font-size:16px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1032);fill:#000000;fill-opacity:1;"
+       transform="translate(-10.334831,55.273003)"><tspan
+         x="431.0957"
+         y="197.16711"><tspan
+           style="fill:#000000;fill-opacity:1">1992</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1036"
+       style="font-weight:bold;font-size:16px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1038);fill:#000000;fill-opacity:1;"
+       transform="translate(-29.041845,-36.743092)"><tspan
+         x="565.43555"
+         y="343.16906"><tspan
+           style="fill:#000000;fill-opacity:1">1997</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1042"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1044);fill:#000000;fill-opacity:1;"
+       transform="translate(11.389362,32.082115)"><tspan
+         x="539.08594"
+         y="183.56847"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Adoption of the </tspan></tspan><tspan
+         x="539.08594"
+         y="196.90184"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Kyoto Protocol</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1048"
+       style="font-weight:bold;font-size:16px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1050);fill:#000000;fill-opacity:1;"
+       transform="translate(1.4805706,26.267597)"><tspan
+         x="651.39453"
+         y="226.10852"><tspan
+           style="fill:#000000;fill-opacity:1">2000</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1054"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1056);fill:#000000;fill-opacity:1;"
+       transform="translate(1.6048702,204.66139)"><tspan
+         x="664.78516"
+         y="119.63878"><tspan
+           style="shape-inside:url(#rect1056)">Declaration of </tspan></tspan><tspan
+         x="664.78516"
+         y="132.97216"><tspan
+           style="shape-inside:url(#rect1056)">MDGs
+</tspan></tspan><tspan
+         x="664.78516"
+         y="146.30553"><tspan
+           style="shape-inside:url(#rect1056)">
+</tspan></tspan><tspan
+         x="664.78516"
+         y="159.6389"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">MDG 7: ensure </tspan></tspan><tspan
+         x="664.78516"
+         y="172.97228"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">environmental </tspan></tspan><tspan
+         x="664.78516"
+         y="186.30565"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">sustainability</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1063"
+       style="font-weight:bold;font-size:16px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';white-space:pre;shape-inside:url(#rect1065);fill:#000000;fill-opacity:1;"
+       transform="translate(-9.1293732,-26.439905)"><tspan
+         x="778.39062"
+         y="332.80187"><tspan
+           style="fill:#000000;fill-opacity:1">2015</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1075"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1077);fill:#000000;fill-opacity:1;"
+       transform="translate(-10.291275,-194.13733)"><tspan
+         x="793.07812"
+         y="342.96105"><tspan
+           style="shape-inside:url(#rect1077)">Adoption of Paris </tspan></tspan><tspan
+         x="793.07812"
+         y="356.29442"><tspan
+           style="shape-inside:url(#rect1077)">Agreement and </tspan></tspan><tspan
+         x="793.07812"
+         y="369.6278"><tspan
+           style="shape-inside:url(#rect1077)">declaration of SDGs
+</tspan></tspan><tspan
+         x="793.07812"
+         y="382.96117"><tspan
+           style="shape-inside:url(#rect1077)">
+</tspan></tspan><tspan
+         x="793.07812"
+         y="396.29454"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">SDG 13: Take urgent </tspan></tspan><tspan
+         x="793.07812"
+         y="409.62792"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">action to combat climate </tspan></tspan><tspan
+         x="793.07812"
+         y="422.96129"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Lato;-inkscape-font-specification:'Lato, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">change and its impacts</tspan></tspan></text>
+  </g>
+</svg>
