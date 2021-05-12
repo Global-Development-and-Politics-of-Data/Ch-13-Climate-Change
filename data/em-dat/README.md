@@ -16,11 +16,6 @@ The Emergency Events Database, or EM-DAT, launched in 1988 by the Centre for Res
 
 
 
-
-
-
-
-
 # References
 
 <a id = "1">[1]</a>

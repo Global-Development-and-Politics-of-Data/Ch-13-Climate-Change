@@ -1,6 +1,3 @@
 # Summary
 
-Here I will explain what each subdirectory does and where clean scripts go.
-
-
-# Packages used in scripts
+This directory consists of all the scripts used to clean, analyze, and visualize the raw datasets within the `data` directory of this repository. We organize this directory using our chosen data workflow: cleaning, analysis, and visualizations.Within each sub-directory are sub-directories that are labeled for each dataset used in this chapter. The datasets are the UNFCCC Emissions, EM-DAT database, Global Carbon Project, and a compilation of the previous three called Vulnerability.
