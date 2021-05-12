@@ -1,0 +1,350 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={EM-DAT Data Cleaning Tutorial},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{EM-DAT Data Cleaning Tutorial}
+\rhead{\today}
+\cfoot{\thepage}
+\usepackage{caption}
+\usepackage{parskip}
+\setlength{\parskip}{0.75\baselineskip plus 2pt}
+\captionsetup[table]{skip=10pt}
+\usepackage{arydshln}
+\setlength{\dashlinedash}{0.2pt}
+\setlength{\dashlinegap}{4.5pt}
+\usepackage{array}
+\renewcommand\arraystretch{2}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0.75em,topsep=3pt}
+\setlist[itemize]{itemsep=0.75em,topsep=3pt}
+\usepackage{multirow}
+\usepackage{setspace}
+\renewcommand\maketitle{}
+\usepackage{subcaption}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\title{EM-DAT Data Cleaning Tutorial}
+\author{}
+\date{\vspace{-2.5em}May 12, 2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{load-libraries}{%
+\subsection{Load libraries}\label{load-libraries}}
+
+First, we need to load the following libraries:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(here)}
+\FunctionTok{library}\NormalTok{(readxl)}
+\FunctionTok{library}\NormalTok{(janitor)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(stringr)}
+\FunctionTok{library}\NormalTok{(scales)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{download-the-dataset}{%
+\subsection{Download the dataset}\label{download-the-dataset}}
+
+You can access the full database \href{https://public.emdat.be/}{here}
+by submitting a query for the data you need. You will need to register
+with the database first before you can submit a query. For the purpose
+of this exercise, we will provide you with the full dataset that starts
+from 1900. This dataset is as of March 24, 2021.
+
+\hypertarget{import-dataset}{%
+\subsection{Import dataset}\label{import-dataset}}
+
+Using the package \texttt{readxl} we can import the dataset that's in
+Excel format. If you preview the raw file in Excel, you will find that
+the first six rows are used as description of the dataset, therefore we
+need to make sure that R does not read rows that are not part of the
+dataset. The function \texttt{read\_excel} provides a convenient option
+called \texttt{skip}, which tells R how many rows to skip before reading
+the dataset. In this case, we need to skip six rows.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{em\_dat }\OtherTok{\textless{}{-}}\NormalTok{ readxl}\SpecialCharTok{::}\FunctionTok{read\_excel}\NormalTok{(here}\SpecialCharTok{::}\FunctionTok{here}\NormalTok{(}\StringTok{"data/em{-}dat"}\NormalTok{, }
+    \StringTok{"emdat{-}public{-}2021{-}03{-}24{-}query{-}uid{-}DuX1xq{-}raw.xlsx"}\NormalTok{), }
+    \AttributeTok{skip =} \DecValTok{6}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{clean-dataset}{%
+\subsection{Clean dataset}\label{clean-dataset}}
+
+Using the \texttt{janitor} package, we can use the function
+\texttt{clean\_names} to create consistent-looking variable names.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{em\_dat }\OtherTok{\textless{}{-}}\NormalTok{ janitor}\SpecialCharTok{::}\FunctionTok{clean\_names}\NormalTok{(em\_dat)}
+\end{Highlighting}
+\end{Shaded}
+
+Instead of recreating the object \texttt{em\_dat} again, we can combine
+the previous two functions using the `pipe' operator,
+\texttt{\%\textgreater{}\%}, which is loaded with the \texttt{tidyverse}
+package. This operator uses the previous output as the new input of the
+subsequent function.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{em\_dat }\OtherTok{\textless{}{-}}\NormalTok{ readxl}\SpecialCharTok{::}\FunctionTok{read\_excel}\NormalTok{(here}\SpecialCharTok{::}\FunctionTok{here}\NormalTok{(}\StringTok{"data/em{-}dat"}\NormalTok{, }
+    \StringTok{"emdat{-}public{-}2021{-}03{-}24{-}query{-}uid{-}DuX1xq{-}raw.xlsx"}\NormalTok{), }
+    \AttributeTok{skip =} \DecValTok{6}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    janitor}\SpecialCharTok{::}\FunctionTok{clean\_names}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+In the above code chunk, we did the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Imported the dataset using \texttt{read\_excel} function.
+\item
+  Took that dataset and cleaned all the variables' names using the
+  \texttt{clean\_names} function.
+\item
+  Called the output of the previous two processes \texttt{em\_dat}.
+\end{enumerate}
+
+The \texttt{pipe} operator is a powerful function that can reduce the
+amount of code you need to write.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{em\_dat\_sub }\OtherTok{\textless{}{-}}\NormalTok{ em\_dat }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(iso, country, year, disaster\_type, }
+\NormalTok{        total\_deaths, no\_injured, no\_affected, }
+\NormalTok{        no\_homeless, total\_affected, total\_damages\_000\_us) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    dplyr}\SpecialCharTok{::}\FunctionTok{filter}\NormalTok{(}\FunctionTok{str\_detect}\NormalTok{(disaster\_type, }
+        \StringTok{"Drought|Extreme temperature|Flood|Storm|Wildfire"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+From 1900 to 2021, 46.8\% of recorded disaster events are from the
+following types: Drought, Extreme temperature, Flood, Storm, and
+Wildfire. Furthermore, within the same time frame, 52.9\% of total
+deaths are attributed to the disaster types that are more exacerbated by
+climate change. As for people affected by these disaster, approximately
+96.3\% are because of these five types of climate-related disasters.
+
+Here we sum over disaster data by disaster type, year, and country. For
+example, we count all the damages that occurred in Bangladesh for the
+year 2018 by floods.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{em\_dat\_climate }\OtherTok{\textless{}{-}}\NormalTok{ em\_dat\_sub }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    dplyr}\SpecialCharTok{::}\FunctionTok{filter}\NormalTok{(}\FunctionTok{as.numeric}\NormalTok{(year) }\SpecialCharTok{\textgreater{}=} \DecValTok{1990} \SpecialCharTok{\&} 
+        \SpecialCharTok{!}\NormalTok{(}\FunctionTok{is.na}\NormalTok{(total\_deaths) }\SpecialCharTok{\&} \FunctionTok{is.na}\NormalTok{(no\_injured) }\SpecialCharTok{\&} 
+            \FunctionTok{is.na}\NormalTok{(no\_affected) }\SpecialCharTok{\&} \FunctionTok{is.na}\NormalTok{(no\_homeless) }\SpecialCharTok{\&} 
+            \FunctionTok{is.na}\NormalTok{(total\_affected) }\SpecialCharTok{\&} \FunctionTok{is.na}\NormalTok{(total\_damages\_000\_us))) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    dplyr}\SpecialCharTok{::}\FunctionTok{group\_by}\NormalTok{(iso, country, year, disaster\_type) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    dplyr}\SpecialCharTok{::}\FunctionTok{summarise\_all}\NormalTok{(}\FunctionTok{funs}\NormalTok{(sum), }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    dplyr}\SpecialCharTok{::}\FunctionTok{mutate}\NormalTok{(}\AttributeTok{country =} \FunctionTok{str\_remove}\NormalTok{(country, }
+        \StringTok{" }\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{(the}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{)"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    dplyr}\SpecialCharTok{::}\FunctionTok{mutate}\NormalTok{(}\AttributeTok{country =} \FunctionTok{str\_replace\_all}\NormalTok{(country, }
+        \FunctionTok{c}\NormalTok{(}\StringTok{\textasciigrave{}}\AttributeTok{Korea }\SpecialCharTok{\textbackslash{}\textbackslash{}}\AttributeTok{(the Republic of}\SpecialCharTok{\textbackslash{}\textbackslash{}}\AttributeTok{)}\StringTok{\textasciigrave{}} \OtherTok{=} \StringTok{"Republic of Korea"}\NormalTok{, }
+            \StringTok{\textasciigrave{}}\AttributeTok{Congo }\SpecialCharTok{\textbackslash{}\textbackslash{}}\AttributeTok{(the Democratic of}\SpecialCharTok{\textbackslash{}\textbackslash{}}\AttributeTok{)}\StringTok{\textasciigrave{}} \OtherTok{=} \StringTok{"Democratic Republic of the Congo"}\NormalTok{, }
+            \StringTok{\textasciigrave{}}\AttributeTok{Tanzania, United Republic of}\StringTok{\textasciigrave{}} \OtherTok{=} \StringTok{"United Republic of Tanzania"}\NormalTok{, }
+            \StringTok{\textasciigrave{}}\AttributeTok{Taiwan }\SpecialCharTok{\textbackslash{}\textbackslash{}}\AttributeTok{(Province of China}\SpecialCharTok{\textbackslash{}\textbackslash{}}\AttributeTok{)}\StringTok{\textasciigrave{}} \OtherTok{=} \StringTok{"China"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{    dplyr}\SpecialCharTok{::}\FunctionTok{na\_if}\NormalTok{(., }\DecValTok{0}\NormalTok{)}
+
+\NormalTok{utils}\SpecialCharTok{::}\FunctionTok{write.csv}\NormalTok{(em\_dat\_climate, }\FunctionTok{here}\NormalTok{(}\StringTok{"scripts/cleaning/em{-}dat"}\NormalTok{, }
+    \StringTok{"em{-}dat{-}clean.csv"}\NormalTok{), }\AttributeTok{row.names =} \ConstantTok{FALSE}\NormalTok{)}
+
+\FunctionTok{rm}\NormalTok{(em\_dat, em\_dat\_climate, em\_dat\_sub)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{export-as-an-r-script-for-future-use}{%
+\subsection{Export as an R script for future
+use}\label{export-as-an-r-script-for-future-use}}
+
+Only run this chunk manually once within the .Rmd file. It produces an
+error when knitting it as a whole because of chunk label duplicates. As
+of May 12, 2021, there hasn't been a viable solution to run the code
+below when as part of the knitting process.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{purl}\NormalTok{(}\StringTok{"em{-}dat{-}clean.Rmd"}\NormalTok{, }\StringTok{"em{-}dat{-}clean.R"}\NormalTok{)}
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{write\_bib}\NormalTok{(}\FunctionTok{.packages}\NormalTok{(), }\StringTok{"packages.bib"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{software-used}{%
+\subsection*{Software used}\label{software-used}}
+\addcontentsline{toc}{subsection}{Software used}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-R-janitor}{}}%
+Firke, Sam. \emph{Janitor: Simple Tools for Examining and Cleaning Dirty
+Data}, 2021. \url{https://github.com/sfirke/janitor}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-here}{}}%
+Müller, Kirill. \emph{Here: A Simpler Way to Find Your Files}, 2020.
+\url{https://CRAN.R-project.org/package=here}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-base}{}}%
+R Core Team. \emph{R: A Language and Environment for Statistical
+Computing}. Vienna, Austria: R Foundation for Statistical Computing,
+2021. \url{https://www.R-project.org/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-stringr}{}}%
+Wickham, Hadley. \emph{Stringr: Simple, Consistent Wrappers for Common
+String Operations}, 2019.
+\url{https://CRAN.R-project.org/package=stringr}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-readxl}{}}%
+Wickham, Hadley, and Jennifer Bryan. \emph{Readxl: Read Excel Files},
+2019. \url{https://CRAN.R-project.org/package=readxl}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-dplyr}{}}%
+Wickham, Hadley, Romain François, Lionel Henry, and Kirill Müller.
+\emph{Dplyr: A Grammar of Data Manipulation}, 2021.
+\url{https://CRAN.R-project.org/package=dplyr}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-scales}{}}%
+Wickham, Hadley, and Dana Seidel. \emph{Scales: Scale Functions for
+Visualization}, 2020. \url{https://CRAN.R-project.org/package=scales}.
+
+\end{CSLReferences}
+
+\end{document}
